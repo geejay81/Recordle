@@ -1,15 +1,31 @@
 (() => {
 
-    const initialiseGame = (puzzleNumber) => {
+    const getTodaysPuzzleNumber = () => {
+        // TODO: make this fetch a number based on the current date.
+        return Math.floor(Math.random() * 4) + 1;
+    }
+
+    const initialiseGame = () => {
+        const puzzleNumber = getTodaysPuzzleNumber();
         const levels = [40, 30, 20, 10, 5, 1];
         const submitButton = document.getElementById("btnSubmit");
         const levelTitle = document.getElementById("puzzle-level-title");
+        const previousGuesses = document.getElementById("previous-guesses");
+        const puzzleControls = document.getElementById("puzzle-controls");
+        const guess = document.getElementById("guess");
         const c = document.createElement("canvas");
         const ctx = c.getContext('2d');
         const img1 = new Image();
+        let answer = "";
+        let puzzle = {};
         let level = 0;
+
+        const resetPuzzleElements = () => {
+            previousGuesses.innerHTML = "";
+            guess.value = "";
+        }
     
-        const renderImage = function () {
+        const renderNextImage = () => {
             
             const w = img1.width;
             const h = img1.height;
@@ -38,24 +54,77 @@
             document.getElementById("puzzle-box").appendChild(img2);
             level++;
             levelTitle.innerHTML = "Level " + level;
+            guess.focus();
+        }
+
+        const logGuess = () => {
+            let nextGuess = document.createElement("li");
+            nextGuess.innerHTML = guess.value;
+            previousGuesses.appendChild(nextGuess);
+            guess.value = "";
+        }
+
+        const showLostGame = () => {
+            const lostHeader = document.createElement("h3");
+            lostHeader.innerHTML ="Better luck next time!";
+            const lostText = document.createElement("p");
+            lostText.innerHTML = "The correct answer was " + puzzle["albumTitle"] + " by " + puzzle["artist"] + ".";
+            puzzleControls.innerHTML = "";
+            puzzleControls.appendChild(lostHeader);
+            puzzleControls.appendChild(lostText);
+        }
+
+        const showFinalScreen = () => {
+            const wonHeader = document.createElement("h3");
+            wonHeader.innerHTML = "You did it!";
+            const wonText = document.createElement("p");
+            wonText.innerHTML = "You knew it was " + puzzle["albumTitle"] + " by " + puzzle["artist"] + " at level " + level + ".";
+            puzzleControls.innerHTML = "";
+            puzzleControls.appendChild(wonHeader);
+            puzzleControls.appendChild(wonText);
+        }
+
+        const getPuzzle = () => {
+            fetch("data.json")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("HTTP error " + response.status);
+                    }
+                    return response.json();
+                })
+                .then(json => {
+                    const puzzleSourceData = json
+                    puzzle = puzzleSourceData.filter(album => album["id"] === puzzleNumber)[0] || null;
+                    answer = puzzle["albumTitle"];
+                    renderNextImage();
+                })
+                .catch(error => console.log(error));
         }
     
         img1.onload = function () {
-            renderImage();
+            resetPuzzleElements();
+            getPuzzle();
         };
     
         submitButton.addEventListener("click", () => {
-            renderImage()
-            if (level === levels.length) submitButton.disabled = true;
+            if (guess.value.toLowerCase() === answer.toLowerCase()) {
+                showFinalScreen();
+            } else {
+                logGuess();
+                renderNextImage();
+                if (level > levels.length) showLostGame();
+            }
+        });
+
+        guess.addEventListener("keyup", (event) => {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                submitButton.click();
+            }
         });
     
         img1.src = "albums/" + puzzleNumber + ".jpg"
     }
-
-    const getTodaysPuzzleNumber = () => {
-        // TODO: make this fetch a number based on the current date.
-        return Math.floor(Math.random() * 4) + 1;
-    }
     
-    initialiseGame(getTodaysPuzzleNumber());
+    initialiseGame();
 })();

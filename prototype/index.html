@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <title>Recordle Prototype</title>
 </head>
 <body>
@@ -11,8 +11,13 @@
     <div id="puzzle-box">
         <h2 id="puzzle-level-title"></h2>
     </div>
-    <button type="button" id="btnSubmit">Submit</button>
-
+    <ul id="previous-guesses"></ul>
+    <div id="puzzle-controls">
+        <label for="guess">Guess</label>
+        <input type="text" id="guess" placeholder="Guess an album"/>
+        <button type="button" id="btnSubmit">Submit</button>
+    </div>
+    
     <script src="app.js" type="module"></script>
 </body>
 </html>
