@@ -1,0 +1,6 @@
+[
+    { "id": 1, "artist": "Nirvana", "albumTitle": "Nevermind" },
+    { "id": 2, "artist": "The Beatles", "albumTitle": "Sgt Pepper's Lonely Hearts Club Band" },
+    { "id": 3, "artist": "The Cure", "albumTitle": "Three Imaginary Boys" },
+    { "id": 4, "artist": "Oasis", "albumTitle": "Definitely Maybe" }
+]
