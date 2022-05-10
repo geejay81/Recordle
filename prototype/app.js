@@ -13,6 +13,7 @@
         const previousGuesses = document.getElementById("previous-guesses");
         const puzzleControls = document.getElementById("puzzle-controls");
         const guess = document.getElementById("guess");
+        const suggestionsList = document.getElementById("suggestionsList");
         const c = document.createElement("canvas");
         const ctx = c.getContext('2d');
         const img1 = new Image();
@@ -95,8 +96,35 @@
                 .then(json => {
                     const puzzleSourceData = json
                     puzzle = puzzleSourceData.filter(album => album["id"] === puzzleNumber)[0] || null;
-                    answer = puzzle["albumTitle"];
+                    answer = puzzle["artist"] + " - " + puzzle["albumTitle"];
                     renderNextImage();
+                })
+                .catch(error => console.log(error));
+        }
+
+        const getAutocompleteSuggestions = (query) => {
+            suggestionsList.innerHTML = "";
+            if (query.length == 0) return;
+
+            fetch("data.json")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("HTTP error " + response.status);
+                    }
+                    return response.json();
+                })
+                .then(json => {
+                    const puzzleSourceData = json
+                    let matches = puzzleSourceData
+                        .filter(album => (album["artist"] + " - " + album["albumTitle"]).toLowerCase().includes(query.toLowerCase()))
+                        .map(album => album["artist"] + " - " + album["albumTitle"])
+                        .sort()
+                        .slice(0,5);
+                    suggestionsList.innerHTML = "";
+                    suggestionsList.style.display = "block";
+                    for (let i = 0; i < matches.length; i++) {
+                        suggestionsList.innerHTML += "<li>" + matches[i] + "</li>";
+                    }
                 })
                 .catch(error => console.log(error));
         }
@@ -105,6 +133,12 @@
             resetPuzzleElements();
             getPuzzle();
         };
+
+        suggestionsList.onclick = function (event) {
+            const setValue = event.target.innerText;
+            guess.value = setValue;
+            this.innerHTML = "";
+          };
     
         submitButton.addEventListener("click", () => {
             if (guess.value.toLowerCase() === answer.toLowerCase()) {
@@ -120,6 +154,8 @@
             if (event.keyCode === 13) {
                 event.preventDefault();
                 submitButton.click();
+            } else {
+                getAutocompleteSuggestions(guess.value);
             }
         });
     
