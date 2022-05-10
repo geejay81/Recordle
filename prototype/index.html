@@ -14,8 +14,9 @@
     <ul id="previous-guesses"></ul>
     <div id="puzzle-controls">
         <label for="guess">Guess</label>
-        <input type="text" id="guess" placeholder="Guess an album"/>
+        <input type="text" id="guess" autocomplete="off" placeholder="Guess an album"/>
         <button type="button" id="btnSubmit">Submit</button>
+        <ul id="suggestionsList"></ul>
     </div>
     
     <script src="app.js" type="module"></script>
