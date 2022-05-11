@@ -1,3 +1,4 @@
+import { MatToolbar } from '@angular/material/toolbar';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,6 +11,10 @@ export class ToolbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  hello(): void {
+    alert('hello');
   }
 
 }
