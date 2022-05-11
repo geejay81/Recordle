@@ -32,9 +32,6 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "./node_modules/@angular/material/autocomplete/_autocomplete-theme.scss",
-              "./node_modules/@angular/material/toolbar/_toolbar-variables.scss",
-              "./node_modules/@angular/material/toolbar/_toolbar-theme.scss",
               "src/styles.scss"
             ],
             "scripts": []
