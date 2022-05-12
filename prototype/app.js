@@ -275,8 +275,6 @@ function autocomplete(inp, arr) {
         //     if (event.keyCode === 13) {
         //         event.preventDefault();
         //         submitButton.click();
-        //     } else {
-        //         getAutocompleteSuggestions(guess.value);
         //     }
         // });
 
