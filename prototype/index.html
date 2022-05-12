@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=0"/>
+    <link rel="stylesheet" href="bulma.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Recordle Prototype</title>
 </head>
 <body>
-    <h1 id="puzzle-title">Recordle</h1>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <h1 id="puzzle-title">Recordle</h1>
+            </a>
+        </div>
+    </nav>
+    <section class="section">
     <div id="puzzle-box">
-        <h2 id="puzzle-level-title"></h2>
+        <h2 class="subtitle" id="puzzle-level-title"></h2>
     </div>
-    <ul id="previous-guesses"></ul>
+    <div class="content">
+        <ul id="previous-guesses"></ul>
+    </div>
+
     <div id="puzzle-controls">
-        <label for="guess">Guess</label>
-        <input type="text" id="guess" autocomplete="off" placeholder="Guess an album"/>
-        <button type="button" id="btnSubmit">Submit</button>
+        <div class="field">
+            <label class="label" for="guess">Answer</label>
+            <div class="control is-medium autocomplete">
+                <input type="text" id="guess" class="input is-primary is-medium" autocomplete="off" placeholder="Guess an album"/>
+            </div>
+          </div>
+        <button type="button" class="button is-primary is-medium" id="btnSubmit">Submit</button>
         <ul id="suggestionsList"></ul>
     </div>
+</section>
     
     <script src="app.js" type="module"></script>
 </body>
