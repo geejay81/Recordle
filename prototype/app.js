@@ -103,7 +103,7 @@ function autocomplete(inp, arr) {
 
     const getTodaysPuzzleNumber = () => {
         // TODO: make this fetch a number based on the current date.
-        return Math.floor(Math.random() * 4) + 1;
+        return Math.floor(Math.random() * 12) + 1;
     }
 
     const initialiseGame = () => {
