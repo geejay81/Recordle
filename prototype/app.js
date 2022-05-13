@@ -118,6 +118,10 @@ function autocomplete(inp, arr) {
         const c = document.createElement("canvas");
         const ctx = c.getContext('2d');
         const img1 = new Image();
+        const guessLog = [];
+        const correct = "correct";
+        const incorrect = "incorrect";
+        const skipped = "skipped"
         let answer = "";
         let puzzle = {};
         let level = 0;
@@ -184,7 +188,7 @@ function autocomplete(inp, arr) {
             wonHeader.classList.add("title");
             wonHeader.innerHTML = "You did it!";
             const wonText = document.createElement("p");
-            wonText.innerHTML = "You knew it was " + puzzle["albumTitle"] + " by " + puzzle["artist"] + " at level " + level + ".";
+            wonText.innerHTML = "You knew it was " + puzzle["albumTitle"] + " by " + puzzle["artist"] + " at level " + guessLog.length + ".";
             puzzleControls.innerHTML = "";
             puzzleControls.appendChild(wonHeader);
             puzzleControls.appendChild(wonText);
@@ -244,8 +248,11 @@ function autocomplete(inp, arr) {
     
         submitButton.addEventListener("click", () => {
             if (guess.value.toLowerCase() === answer.toLowerCase()) {
+                guessLog.push(correct);
+                logGuess();
                 showFinalScreen();
             } else {
+                guessLog.push(guess.value.length === 0 ? skipped : incorrect);
                 logGuess();
                 renderNextImage();
                 if (level == levels.length) showLostGame();
