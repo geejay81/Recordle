@@ -18,14 +18,15 @@ function autocomplete(inp, arr) {
         /*for each item in the array...*/
         for (i = 0; i < arr.length; i++) {
           /*check if the item starts with the same letters as the text field value:*/
-          if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          if (arr[i].toUpperCase().includes(val.toUpperCase())) {
             /*create a DIV element for each matching element:*/
             b = document.createElement("DIV");
             /*make the matching letters bold:*/
-            b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-            b.innerHTML += arr[i].substr(val.length);
+            //b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+            //b.innerHTML += arr[i].substr(val.length);
+            b.innerHTML = arr[i];
             /*insert a input field that will hold the current array item's value:*/
-            b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+            b.innerHTML += "<input type='hidden' value='" + arr[i].replace("'","") + "'>";
             /*execute a function when someone clicks on the item value (DIV element):*/
                 b.addEventListener("click", function(e) {
                 /*insert the value for the autocomplete text field:*/
@@ -34,8 +35,11 @@ function autocomplete(inp, arr) {
                 (or any other open lists of autocompleted values:*/
                 closeAllLists();
             });
+
             a.appendChild(b);
           }
+
+          if (a.childElementCount == 5) break;
         }
     });
     /*execute a function presses a key on the keyboard:*/
@@ -104,7 +108,7 @@ function autocomplete(inp, arr) {
 
     const initialiseGame = () => {
         const puzzleNumber = getTodaysPuzzleNumber();
-        const levels = [40, 30, 20, 10, 5, 1];
+        const levels = [40, 30, 20, 15, 10, 5, 1];
         const submitButton = document.getElementById("btnSubmit");
         const levelTitle = document.getElementById("puzzle-level-title");
         const previousGuesses = document.getElementById("previous-guesses");
@@ -164,6 +168,7 @@ function autocomplete(inp, arr) {
 
         const showLostGame = () => {
             const lostHeader = document.createElement("h3");
+            lostHeader.classList.add("title");
             lostHeader.innerHTML ="Better luck next time!";
             const lostText = document.createElement("p");
             lostText.innerHTML = "The correct answer was " + puzzle["albumTitle"] + " by " + puzzle["artist"] + ".";
@@ -173,7 +178,10 @@ function autocomplete(inp, arr) {
         }
 
         const showFinalScreen = () => {
+            level = level == levels.length;
+            renderNextImage();
             const wonHeader = document.createElement("h3");
+            wonHeader.classList.add("title");
             wonHeader.innerHTML = "You did it!";
             const wonText = document.createElement("p");
             wonText.innerHTML = "You knew it was " + puzzle["albumTitle"] + " by " + puzzle["artist"] + " at level " + level + ".";
@@ -199,33 +207,6 @@ function autocomplete(inp, arr) {
                 .catch(error => console.log(error));
         }
 
-        // const getAutocompleteSuggestions = (query) => {
-        //     suggestionsList.innerHTML = "";
-        //     if (query.length == 0) return;
-
-        //     fetch("data.json")
-        //         .then(response => {
-        //             if (!response.ok) {
-        //                 throw new Error("HTTP error " + response.status);
-        //             }
-        //             return response.json();
-        //         })
-        //         .then(json => {
-        //             const puzzleSourceData = json
-        //             let matches = puzzleSourceData
-        //                 .filter(album => (album["artist"] + " - " + album["albumTitle"]).toLowerCase().includes(query.toLowerCase()))
-        //                 .map(album => album["artist"] + " - " + album["albumTitle"])
-        //                 .sort()
-        //                 .slice(0,5);
-        //             suggestionsList.innerHTML = "";
-        //             suggestionsList.style.display = "block";
-        //             for (let i = 0; i < matches.length; i++) {
-        //                 suggestionsList.innerHTML += "<li>" + matches[i] + "</li>";
-        //             }
-        //         })
-        //         .catch(error => console.log(error));
-        // }
-
         const getAutocompleteSuggestions = () => {
             const result = [];
 
@@ -250,12 +231,12 @@ function autocomplete(inp, arr) {
                 .catch(error => console.log(error));
         }
     
-        img1.onload = function () {
+        img1.onload = () => {
             resetPuzzleElements();
             getPuzzle();
         };
 
-        suggestionsList.onclick = function (event) {
+        suggestionsList.onclick = (event) => {
             const setValue = event.target.innerText;
             guess.value = setValue;
             this.innerHTML = "";
@@ -267,16 +248,9 @@ function autocomplete(inp, arr) {
             } else {
                 logGuess();
                 renderNextImage();
-                if (level > levels.length) showLostGame();
+                if (level == levels.length) showLostGame();
             }
         });
-
-        // guess.addEventListener("keyup", (event) => {
-        //     if (event.keyCode === 13) {
-        //         event.preventDefault();
-        //         submitButton.click();
-        //     }
-        // });
 
         getAutocompleteSuggestions();
 

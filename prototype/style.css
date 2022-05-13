@@ -52,3 +52,9 @@ input[type="submit"] {
   background-color: DodgerBlue !important;
   color: #ffffff;
 }
+
+@media screen and (max-width: 480px) {
+    #puzzle-box {
+        text-align: center;
+    }
+}
