@@ -17,24 +17,23 @@
         </div>
     </nav>
     <section class="section">
-    <div id="puzzle-box">
-        <h2 class="subtitle" id="puzzle-level-title"></h2>
-    </div>
-    <div class="content">
-        <ul id="previous-guesses"></ul>
-    </div>
+        <div id="puzzle-box"></div>
+        <div class="content">
+            <ol id="previous-guesses"></ol>
+        </div>
 
-    <div id="puzzle-controls">
-        <div class="field">
-            <label class="label" for="guess">Answer</label>
-            <div class="control is-medium autocomplete">
-                <input type="text" id="guess" class="input is-primary is-medium" autocomplete="off" placeholder="Guess an album"/>
+        <div id="puzzle-controls">
+            <h2 class="subtitle" id="puzzle-level-title"></h2>
+            <div class="field">
+                <label class="label" for="guess">Answer</label>
+                <div class="control is-medium autocomplete">
+                    <input type="text" id="guess" class="input is-primary is-medium" autocomplete="off" placeholder="Guess an album"/>
+                </div>
             </div>
-          </div>
-        <button type="button" class="button is-primary is-medium" id="btnSubmit">Submit</button>
-        <ul id="suggestionsList"></ul>
-    </div>
-</section>
+            <button type="button" class="button is-primary is-medium" id="btnSubmit">Submit</button>
+            <ul id="suggestionsList"></ul>
+        </div>
+    </section>
     
     <script src="app.js" type="module"></script>
 </body>
