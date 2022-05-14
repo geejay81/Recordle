@@ -181,8 +181,7 @@ function autocomplete(inp, arr) {
             puzzleControls.appendChild(lostHeader);
             puzzleControls.appendChild(lostText);
             puzzleControls.setAttribute("role","alert");
-            puzzleControls.tabIndex = "-1";
-            puzzleControls.focus();
+            lostHeader.focus();
         }
 
         const showFinalScreen = () => {
@@ -198,7 +197,7 @@ function autocomplete(inp, arr) {
             puzzleControls.appendChild(wonText);
             puzzleControls.setAttribute("role","alert");
             puzzleControls.tabIndex = "-1";
-            puzzleControls.focus();
+            wonHeader.focus();
         }
 
         const getPuzzle = () => {
