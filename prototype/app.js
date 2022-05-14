@@ -176,12 +176,13 @@ function autocomplete(inp, arr) {
             lostHeader.classList.add("title");
             lostHeader.innerHTML ="Better luck next time!";
             const lostText = document.createElement("p");
-            lostText.innerHTML = "The correct answer was " + puzzle["albumTitle"] + " by " + puzzle["artist"] + ".";
+            lostText.innerHTML = "The correct answer was <b>" + puzzle["albumTitle"] + "</b> by <b>" + puzzle["artist"] + "</b>.";
             puzzleControls.innerHTML = "";
             puzzleControls.appendChild(lostHeader);
             puzzleControls.appendChild(lostText);
             puzzleControls.setAttribute("role","alert");
-            lostHeader.focus();
+            puzzleControls.classList.add("notification", "is-danger");
+            puzzleControls.focus();
         }
 
         const showFinalScreen = () => {
@@ -191,13 +192,14 @@ function autocomplete(inp, arr) {
             wonHeader.classList.add("title");
             wonHeader.innerHTML = "You did it!";
             const wonText = document.createElement("p");
-            wonText.innerHTML = "You knew it was " + puzzle["albumTitle"] + " by " + puzzle["artist"] + " at level " + guessLog.length + ".";
+            wonText.innerHTML = "You knew it was <b>" + puzzle["albumTitle"] + "</b> by <b>" + puzzle["artist"] + "</b> at <b>Level " + guessLog.length + "</b>.";
             puzzleControls.innerHTML = "";
             puzzleControls.appendChild(wonHeader);
             puzzleControls.appendChild(wonText);
             puzzleControls.setAttribute("role","alert");
+            puzzleControls.classList.add("notification", "is-primary");
             puzzleControls.tabIndex = "-1";
-            wonHeader.focus();
+            puzzleControls.focus();
         }
 
         const getPuzzle = () => {
