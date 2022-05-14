@@ -160,7 +160,8 @@ function autocomplete(inp, arr) {
             document.getElementById("puzzle-box").appendChild(img2);
             level++;
             levelTitle.innerHTML = "Level " + level;
-            guess.focus();
+            img2.tabIndex = "-1";
+            img2.focus();
         }
 
         const logGuess = () => {
@@ -179,6 +180,9 @@ function autocomplete(inp, arr) {
             puzzleControls.innerHTML = "";
             puzzleControls.appendChild(lostHeader);
             puzzleControls.appendChild(lostText);
+            puzzleControls.setAttribute("role","alert");
+            puzzleControls.tabIndex = "-1";
+            puzzleControls.focus();
         }
 
         const showFinalScreen = () => {
@@ -192,6 +196,9 @@ function autocomplete(inp, arr) {
             puzzleControls.innerHTML = "";
             puzzleControls.appendChild(wonHeader);
             puzzleControls.appendChild(wonText);
+            puzzleControls.setAttribute("role","alert");
+            puzzleControls.tabIndex = "-1";
+            puzzleControls.focus();
         }
 
         const getPuzzle = () => {
