@@ -53,6 +53,10 @@ input[type="submit"] {
   color: #ffffff;
 }
 
+div:focus, img:focus {
+  border: none;
+}
+
 @media screen and (max-width: 480px) {
     #puzzle-box {
         text-align: center;
