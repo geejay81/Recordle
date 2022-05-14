@@ -53,6 +53,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bulma/bulma.sass",
               "src/styles.sass"
             ],
             "scripts": []
