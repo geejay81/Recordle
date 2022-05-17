@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,6 +10,7 @@ import { GuessTheAlbumComponent } from './routes/guess-the-album/guess-the-album
 import { NavbarComponent } from './page-elements/navbar/navbar.component';
 import { FooterComponent } from './page-elements/footer/footer.component';
 import { PuzzleComponent } from './components/puzzle/puzzle.component';
+import { PuzzleImageComponent } from './components/puzzle-image/puzzle-image.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { PuzzleComponent } from './components/puzzle/puzzle.component';
     GuessTheAlbumComponent,
     NavbarComponent,
     FooterComponent,
-    PuzzleComponent
+    PuzzleComponent,
+    PuzzleImageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
     RouterModule
   ],

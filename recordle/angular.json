@@ -56,7 +56,9 @@
               "./node_modules/bulma/bulma.sass",
               "src/styles.sass"
             ],
-            "scripts": []
+            "scripts": [
+              "./src/assets/scripts/autocomplete.js"
+            ]
           },
           "configurations": {
             "production": {
