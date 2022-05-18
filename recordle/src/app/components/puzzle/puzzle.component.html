@@ -1,7 +1,9 @@
 <section class="section">
     <div id="puzzle-box"></div>
     <div class="content">
-        <ol id="previous-guesses"></ol>
+        <ol id="previous-guesses" *ngIf="guesses.length > 0">
+            <li *ngFor="let g of guesses" [innerHTML]="g.answer"></li>
+        </ol>
     </div>
 
     <div id="puzzle-controls">
@@ -10,10 +12,11 @@
             <label class="label" for="guess">Answer</label>
             <div class="control is-danger autocomplete">
                 <input type="text" id="guess"
-                    class="input is-primary is-medium" autocomplete="off" 
-                    placeholder="Guess an album" />
+                    class="input is-primary is-medium" 
+                    autocomplete="off"
+                    name="guess" />
             </div>
         </div>
-        <button type="button" class="button is-primary is-medium" id="btnSubmit" (click)="submitGuess('todo')">Submit</button>
+        <button type="button" class="button is-primary is-medium" id="btnSubmit" (click)="submitGuess()">Submit</button>
     </div>
 </section>

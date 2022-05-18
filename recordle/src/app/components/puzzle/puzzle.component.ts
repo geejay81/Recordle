@@ -1,9 +1,10 @@
 import { PuzzleImageComponent } from './../puzzle-image/puzzle-image.component';
 import { DataService } from './../../services/data.service';
 import { IAlbum } from './../../models/IAlbum';
-import { Component, OnInit, ViewChildren, AfterViewInit } from '@angular/core';
+import { Component, OnInit, ViewChildren } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { autocomplete } from 'src/assets/scripts/autocomplete';
+import { Guess } from 'src/app/models/guess';
 
 @Component({
   selector: 'app-puzzle',
@@ -22,7 +23,8 @@ export class PuzzleComponent implements OnInit {
   c = document.createElement("canvas");
   ctx = this.c.getContext('2d');
   img1 = new Image();
-  guess = document.getElementById("guess");
+  guessInput = document.getElementById("guess");
+  guesses: Guess[] = [];
   
   constructor(
     private dataService: DataService
@@ -44,10 +46,10 @@ export class PuzzleComponent implements OnInit {
   initialiseAutocomplete(): void {
     const matches = 
       this.puzzleData
-        .map(album => album["artist"] + " - " + album["albumTitle"])
+        .map(album => `${album["artist"]} - ${album["albumTitle"]}`)
         .sort();
     
-    autocomplete(this.guess, matches);
+    autocomplete(this.guessInput, matches);
   }
 
   initialisePuzzle(): void {
@@ -61,8 +63,38 @@ export class PuzzleComponent implements OnInit {
     this.img1.src = `../../../assets/images/albums/${this.puzzleNumber}.jpg`;
   }
 
-  submitGuess(submittedGuess: string): void {
-    console.log(submittedGuess);
+  submitGuess(): void {
+    const submission = (<HTMLInputElement>document.getElementById("guess")).value;
+    if (submission.toLowerCase().trim() == (`${this.answer?.artist} - ${this.answer?.albumTitle}`).toLowerCase()) {
+      this.handleCorrectAnswer(submission);
+    } else {
+      this.handleIncorrectAnswer(submission);
+    }
+  }
+
+  private handleCorrectAnswer(submission: string) {
+    this.logGuess("correct", submission);
+    (<HTMLInputElement>document.getElementById("guess")).value = '';
+    // TODO: show won screen.
+  }
+
+  private handleIncorrectAnswer(submission: string) {
+    this.logGuess("incorrect", submission);
+    (<HTMLInputElement>document.getElementById("guess")).value = '';
+    if (this.guesses.length == this.levels.length) {
+      // TODO: show lost screen.
+    } else {
+      // TODO: prepare next go.
+      this.level++;
+      this.renderImage();
+    }
+  }
+
+  private logGuess(result: string, answer: string) {
+    const guessToLog = new Guess();
+    guessToLog.answer = answer;
+    guessToLog.result = result;
+    this.guesses.push(guessToLog);
   }
 
   private getIdForTodaysPuzzle(): number {
@@ -102,3 +134,4 @@ export class PuzzleComponent implements OnInit {
     img2.focus();
   }
 }
+
