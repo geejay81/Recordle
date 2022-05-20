@@ -1,22 +1,29 @@
 <section class="section">
-    <div id="puzzle-box"></div>
-    <div class="content">
-        <ol id="previous-guesses" *ngIf="guesses.length > 0">
-            <li *ngFor="let g of guesses" [innerHTML]="g.answer"></li>
-        </ol>
-    </div>
-
-    <div id="puzzle-controls">
-        <h2 class="subtitle" id="puzzle-level-title"></h2>
-        <div class="field">
-            <label class="label" for="guess">Answer</label>
-            <div class="control is-danger autocomplete">
-                <input type="text" id="guess"
-                    class="input is-primary is-medium" 
-                    autocomplete="off"
-                    name="guess" />
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <div id="puzzle-box"></div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <ol id="previous-guesses" *ngIf="guesses.length > 0">
+                        <li *ngFor="let g of guesses"><i class="fa-regular fa-tick"></i> {{ g.answer }}</li>
+                    </ol>
+                </div>
+                <div id="puzzle-controls">
+                    <h2 class="subtitle" id="puzzle-level-title"></h2>
+                    <div class="field">
+                        <label class="label" for="guess">Answer</label>
+                        <div class="control autocomplete">
+                            <input type="text" id="guess"
+                                class="input is-outlined is-medium" 
+                                autocomplete="off"
+                                name="guess" />
+                        </div>
+                    </div>
+                    <button type="button" class="button is-light is-medium" id="btnSubmit" (click)="submitGuess()">Submit</button>
+                </div>
             </div>
         </div>
-        <button type="button" class="button is-primary is-medium" id="btnSubmit" (click)="submitGuess()">Submit</button>
     </div>
 </section>

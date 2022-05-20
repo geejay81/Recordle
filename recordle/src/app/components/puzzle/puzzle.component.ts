@@ -64,7 +64,7 @@ export class PuzzleComponent implements OnInit {
   }
 
   submitGuess(): void {
-    const submission = (<HTMLInputElement>document.getElementById("guess")).value;
+    const submission = this.getGuessField();
     if (submission.toLowerCase().trim() == (`${this.answer?.artist} - ${this.answer?.albumTitle}`).toLowerCase()) {
       this.handleCorrectAnswer(submission);
     } else {
@@ -74,13 +74,13 @@ export class PuzzleComponent implements OnInit {
 
   private handleCorrectAnswer(submission: string) {
     this.logGuess("correct", submission);
-    (<HTMLInputElement>document.getElementById("guess")).value = '';
+    this.setGuessField('');
     // TODO: show won screen.
   }
 
   private handleIncorrectAnswer(submission: string) {
     this.logGuess("incorrect", submission);
-    (<HTMLInputElement>document.getElementById("guess")).value = '';
+    this.setGuessField('');
     if (this.guesses.length == this.levels.length) {
       // TODO: show lost screen.
     } else {
@@ -132,6 +132,14 @@ export class PuzzleComponent implements OnInit {
     //levelTitle.innerHTML = "Level " + level;
     img2.tabIndex = -1;
     img2.focus();
+  }
+
+  private setGuessField(textToFill: string): void {
+    (<HTMLInputElement>document.getElementById("guess")).value = textToFill;
+  }
+
+  private getGuessField(): string {
+    return (<HTMLInputElement>document.getElementById("guess")).value;
   }
 }
 
