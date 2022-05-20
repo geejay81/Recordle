@@ -3,13 +3,28 @@
         <div class="columns">
             <div class="column">
                 <div id="puzzle-box"></div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <ol id="previous-guesses" *ngIf="guesses.length > 0">
-                        <li *ngFor="let g of guesses"><i class="fa-regular fa-tick"></i> {{ g.answer }}</li>
-                    </ol>
+                <div id="guess-boxes notification">
+                    <span [ngClass]="getBoxWrapperClass(1)">
+                        <i [ngClass]="getBoxIconClass(1)"></i>
+                    </span>
+                    <span [ngClass]="getBoxWrapperClass(2)">
+                        <i [ngClass]="getBoxIconClass(2)"></i>
+                    </span>
+                    <span [ngClass]="getBoxWrapperClass(3)">
+                        <i [ngClass]="getBoxIconClass(3)"></i>
+                    </span>
+                    <span [ngClass]="getBoxWrapperClass(4)">
+                        <i [ngClass]="getBoxIconClass(4)"></i>
+                    </span>
+                    <span [ngClass]="getBoxWrapperClass(5)">
+                        <i [ngClass]="getBoxIconClass(5)"></i>
+                    </span>
+                    <span [ngClass]="getBoxWrapperClass(6)">
+                        <i [ngClass]="getBoxIconClass(6)"></i>
+                    </span>
                 </div>
+            </div>
+            <div class="column" *ngIf="gameMode == 'play'">
                 <div id="puzzle-controls">
                     <h2 class="subtitle" id="puzzle-level-title"></h2>
                     <div class="field">
@@ -22,6 +37,23 @@
                         </div>
                     </div>
                     <button type="button" class="button is-light is-medium" id="btnSubmit" (click)="submitGuess()">Submit</button>
+                </div>
+                <div class="content" *ngIf="guesses.length > 0">
+                    <ol id="previous-guesses">
+                        <li *ngFor="let g of guesses"><i class="fa-regular fa-tick"></i> {{ g.answer }}</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="column" *ngIf="gameMode == 'won'">
+                <div class="notification is-success content" role="alert">
+                    <h2 class="title">Top of the Pops!</h2>
+                    <p>You knew that the answer was <b>{{ answer?.albumTitle }}</b> by <b>{{ answer?.artist }}</b>.</p>
+                </div>
+            </div>
+            <div class="column" *ngIf="gameMode == 'lost'">
+                <div class="notification is-danger content" role="alert">
+                    <h2 class="title">Better luck next time!</h2>
+                    <p>The answer was <b>{{ answer?.albumTitle }}</b> by <b>{{ answer?.artist }}</b>.</p>
                 </div>
             </div>
         </div>

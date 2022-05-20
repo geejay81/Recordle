@@ -14,6 +14,7 @@ import { Guess } from 'src/app/models/guess';
 export class PuzzleComponent implements OnInit {
   @ViewChildren(PuzzleImageComponent) puzzleImageComponent!: PuzzleImageComponent;
 
+  gameMode = 'play';
   levels = [40, 30, 20, 15, 10, 5];
   level = 0;
   puzzleData: IAlbum[] = [];
@@ -58,7 +59,7 @@ export class PuzzleComponent implements OnInit {
     this.img1.width = 300;
     this.img1.height = 300;
     this.img1.onload = () => {
-      this.renderImage();
+      this.showCurrentLevelImage();
     };
     this.img1.src = `../../../assets/images/albums/${this.puzzleNumber}.jpg`;
   }
@@ -72,10 +73,26 @@ export class PuzzleComponent implements OnInit {
     }
   }
 
+  getBoxWrapperClass(box: number): string {
+    if (box > this.guesses.length) return 'icon has-text-light';
+    if (this.guesses[box - 1]?.result == 'correct') return 'icon has-text-success';
+    if (this.guesses[box - 1]?.result == 'incorrect') return 'icon has-text-danger';
+    return 'icon has-text-light';
+  }
+
+  getBoxIconClass(box: number): string {
+    if (box > this.guesses.length) return 'fa-solid fa-square';
+    if (this.guesses[box - 1]?.result == 'correct') return 'fa-solid fa-square-check';
+    if (this.guesses[box - 1]?.result == 'incorrect') return 'fa-solid fa-square-xmark';
+    return 'fa-solid fa-square';
+  }
+
   private handleCorrectAnswer(submission: string) {
     this.logGuess("correct", submission);
     this.setGuessField('');
     // TODO: show won screen.
+    this.renderImage(1);
+    this.gameMode = 'won';
   }
 
   private handleIncorrectAnswer(submission: string) {
@@ -83,10 +100,12 @@ export class PuzzleComponent implements OnInit {
     this.setGuessField('');
     if (this.guesses.length == this.levels.length) {
       // TODO: show lost screen.
+      this.renderImage(1);
+      this.gameMode = 'lost';
     } else {
       // TODO: prepare next go.
       this.level++;
-      this.renderImage();
+      this.showCurrentLevelImage();
     }
   }
 
@@ -101,7 +120,11 @@ export class PuzzleComponent implements OnInit {
     return 2;
   }
 
-  private renderImage(): void {
+  private showCurrentLevelImage(): void {
+    this.renderImage(this.levels[this.level]);
+  }
+
+  private renderImage(pixelSize: number): void {
 
     const w = this.img1.width;
     const h = this.img1.height;
@@ -112,7 +135,7 @@ export class PuzzleComponent implements OnInit {
 
     let pixelArr = this.ctx!.getImageData(0, 0, w, h).data;
 
-    const sample_size = this.levels[this.level];
+    const sample_size = pixelSize;
     
     for (let y = 0; y < h; y += sample_size) {
         for (let x = 0; x < w; x += sample_size) {
