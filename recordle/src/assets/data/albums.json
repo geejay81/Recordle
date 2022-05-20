@@ -1,0 +1,1105 @@
+[
+  { "id": 1, "artist": "Nirvana", "albumTitle": "Nevermind" },
+  {
+    "id": 2,
+    "artist": "The Beatles",
+    "albumTitle": "Sgt Pepper's Lonely Hearts Club Band"
+  },
+  { "id": 3, "artist": "The Cure", "albumTitle": "Three Imaginary Boys" },
+  { "id": 4, "artist": "Oasis", "albumTitle": "Definitely Maybe" },
+  {
+    "id": 5,
+    "artist": "The Velvet Underground",
+    "albumTitle": "The Velvet Underground"
+  },
+
+  { "id": 6, "artist": "Neil Young", "albumTitle": "Tonight's the Night" },
+  { "id": "", "artist": "The Beach Boys", "albumTitle": "Pet Sounds" },
+  { "id": "", "artist": "The Beatles", "albumTitle": "Revolver" },
+  { "id": "", "artist": "Bob Dylan", "albumTitle": "Highway 61 Revisited" },
+  { "id": "", "artist": "The Beatles", "albumTitle": "Rubber Soul" },
+  { "id": "", "artist": "Marvin Gaye", "albumTitle": "What's Going On" },
+  {
+    "id": "",
+    "artist": "The Rolling Stones",
+    "albumTitle": "Exile on Main St."
+  },
+  { "id": "", "artist": "The Clash", "albumTitle": "London Calling" },
+  { "id": "", "artist": "Bob Dylan", "albumTitle": "Blonde on Blonde" },
+  {
+    "id": "",
+    "artist": "The Beatles",
+    "albumTitle": "The Beatles ('The White Album')"
+  },
+  { "id": "", "artist": "Elvis Presley", "albumTitle": "The Sun Sessions" },
+  { "id": "", "artist": "Miles Davis", "albumTitle": "Kind of Blue" },
+  {
+    "id": "",
+    "artist": "The Velvet Underground",
+    "albumTitle": "The Velvet Underground & Nico"
+  },
+  { "id": "", "artist": "The Beatles", "albumTitle": "Abbey Road" },
+  {
+    "id": "",
+    "artist": "The Jimi Hendrix Experience",
+    "albumTitle": "Are You Experienced"
+  },
+  { "id": "", "artist": "Bob Dylan", "albumTitle": "Blood on the Tracks" },
+  { "id": "", "artist": "Bruce Springsteen", "albumTitle": "Born to Run" },
+  { "id": "", "artist": "Van Morrison", "albumTitle": "Astral Weeks" },
+  { "id": "", "artist": "Michael Jackson", "albumTitle": "Thriller" },
+  { "id": "", "artist": "Chuck Berry", "albumTitle": "The Great Twenty_Eight" },
+  {
+    "id": "",
+    "artist": "Robert Johnson",
+    "albumTitle": "The Complete Recordings"
+  },
+  {
+    "id": "",
+    "artist": "John Lennon / Plastic Ono Band",
+    "albumTitle": "John Lennon/Plastic Ono Band"
+  },
+  { "id": "", "artist": "Stevie Wonder", "albumTitle": "Innervisions" },
+  {
+    "id": "",
+    "artist": "James Brown",
+    "albumTitle": "Live at the Apollo, 1962"
+  },
+  { "id": "", "artist": "Fleetwood Mac", "albumTitle": "Rumours" },
+  { "id": "", "artist": "U2", "albumTitle": "The Joshua Tree" },
+  { "id": "", "artist": "The Who", "albumTitle": "Who's Next" },
+  { "id": "", "artist": "Led Zeppelin", "albumTitle": "Led Zeppelin" },
+  { "id": "", "artist": "Joni Mitchell", "albumTitle": "Blue" },
+  {
+    "id": "",
+    "artist": "Bob Dylan",
+    "albumTitle": "Bringing It All Back Home"
+  },
+  { "id": "", "artist": "The Rolling Stones", "albumTitle": "Let It Bleed" },
+  { "id": "", "artist": "Ramones", "albumTitle": "Ramones" },
+  { "id": "", "artist": "The Band", "albumTitle": "Music From Big Pink" },
+  {
+    "id": "",
+    "artist": "David Bowie",
+    "albumTitle": "The Rise and Fall of Ziggy Stardust and the Spiders From Mars"
+  },
+  { "id": "", "artist": "Carole King", "albumTitle": "Tapestry" },
+  { "id": "", "artist": "Eagles", "albumTitle": "Hotel California" },
+  { "id": "", "artist": "Muddy Waters", "albumTitle": "The Anthology" },
+  { "id": "", "artist": "The Beatles", "albumTitle": "Please Please Me" },
+  { "id": "", "artist": "Love", "albumTitle": "Forever Changes" },
+  {
+    "id": "",
+    "artist": "Sex Pistols",
+    "albumTitle": "Never Mind the Bollocks Here's the Sex Pistols"
+  },
+  { "id": "", "artist": "The Doors", "albumTitle": "The Doors" },
+  {
+    "id": 12,
+    "artist": "Pink Floyd",
+    "albumTitle": "The Dark Side of the Moon"
+  },
+  { "id": "", "artist": "Patti Smith", "albumTitle": "Horses" },
+  {
+    "id": "",
+    "artist": "The Band",
+    "albumTitle": "The Band ('The Brown Album')"
+  },
+  {
+    "id": "",
+    "artist": "Bob Marley & The Wailers",
+    "albumTitle": "Legend: The Best of Bob Marley and The Wailers"
+  },
+  { "id": "", "artist": "John Coltrane", "albumTitle": "A Love Supreme" },
+  {
+    "id": "",
+    "artist": "Public Enemy",
+    "albumTitle": "It Takes a Nation of Millions to Hold Us Back"
+  },
+  {
+    "id": "",
+    "artist": "The Allman Brothers Band",
+    "albumTitle": "At Fillmore East"
+  },
+  {
+    "id": "",
+    "artist": "Little Richard",
+    "albumTitle": "Here's Little Richard"
+  },
+  {
+    "id": "",
+    "artist": "Simon & Garfunkel",
+    "albumTitle": "Bridge Over Troubled Water"
+  },
+  { "id": "", "artist": "Al Green", "albumTitle": "Greatest Hits" },
+  { "id": "", "artist": "The Beatles", "albumTitle": "Meet The Beatles!" },
+  { "id": "", "artist": "Ray Charles", "albumTitle": "The Birth of Soul" },
+  {
+    "id": "",
+    "artist": "The Jimi Hendrix Experience",
+    "albumTitle": "Electric Ladyland"
+  },
+  { "id": "", "artist": "Elvis Presley", "albumTitle": "Elvis Presley" },
+  {
+    "id": "",
+    "artist": "Stevie Wonder",
+    "albumTitle": "Songs in the Key of Life"
+  },
+  { "id": "", "artist": "The Rolling Stones", "albumTitle": "Beggars Banquet" },
+  {
+    "id": "",
+    "artist": "Creedence Clearwater Revival",
+    "albumTitle": "Chronicle: The 20 Greatest Hits"
+  },
+  {
+    "id": "",
+    "artist": "Captain Beefheart & His Magic Band",
+    "albumTitle": "Trout Mask Replica"
+  },
+  {
+    "id": "",
+    "artist": "Sly & The Family Stone",
+    "albumTitle": "Greatest Hits"
+  },
+  {
+    "id": "",
+    "artist": "Guns N' Roses",
+    "albumTitle": "Appetite for Destruction"
+  },
+  { "id": "", "artist": "U2", "albumTitle": "Achtung Baby" },
+  { "id": "", "artist": "The Rolling Stones", "albumTitle": "Sticky Fingers" },
+  {
+    "id": "",
+    "artist": "Phil Spector",
+    "albumTitle": "Back to Mono (1958-1969)"
+  },
+  { "id": "", "artist": "Van Morrison", "albumTitle": "Moondance" },
+  { "id": "", "artist": "Radiohead", "albumTitle": "Kid A" },
+  { "id": "", "artist": "Michael Jackson", "albumTitle": "Off the Wall" },
+  { "id": "", "artist": "Led Zeppelin", "albumTitle": "[Led Zeppelin IV]" },
+  { "id": "", "artist": "Billy Joel", "albumTitle": "The Stranger" },
+  { "id": "", "artist": "Paul Simon", "albumTitle": "Graceland" },
+  { "id": "", "artist": "Curtis Mayfield", "albumTitle": "Superfly" },
+  { "id": "", "artist": "Led Zeppelin", "albumTitle": "Physical Graffiti" },
+  { "id": "", "artist": "Neil Young", "albumTitle": "After the Gold Rush" },
+  { "id": "", "artist": "James Brown", "albumTitle": "Star Time" },
+  {
+    "id": "",
+    "artist": "Prince and the Revolution",
+    "albumTitle": "Purple Rain"
+  },
+  { "id": "", "artist": "AC/DC", "albumTitle": "Back in Black" },
+  {
+    "id": "",
+    "artist": "Otis Redding",
+    "albumTitle": "Otis Blue: Otis Redding Sings Soul"
+  },
+  { "id": "", "artist": "Led Zeppelin", "albumTitle": "Led Zeppelin II" },
+  { "id": "", "artist": "John Lennon", "albumTitle": "Imagine" },
+  { "id": "", "artist": "The Clash", "albumTitle": "The Clash" },
+  { "id": "", "artist": "Neil Young", "albumTitle": "Harvest" },
+  {
+    "id": "",
+    "artist": "The Jimi Hendrix Experience",
+    "albumTitle": "Axis: Bold as Love"
+  },
+  {
+    "id": "",
+    "artist": "Aretha Franklin",
+    "albumTitle": "I Never Loved a Man the Way I Love You"
+  },
+  { "id": "", "artist": "Aretha Franklin", "albumTitle": "Lady Soul" },
+  {
+    "id": "",
+    "artist": "Bruce Springsteen",
+    "albumTitle": "Born in the U.S.A."
+  },
+  { "id": "", "artist": "Pink Floyd", "albumTitle": "The Wall" },
+  { "id": "", "artist": "Johnny Cash", "albumTitle": "At Folsom Prison" },
+  { "id": "", "artist": "Dusty Springfield", "albumTitle": "Dusty in Memphis" },
+  { "id": "", "artist": "Stevie Wonder", "albumTitle": "Talking Book" },
+  {
+    "id": "",
+    "artist": "Elton John",
+    "albumTitle": "Goodbye Yellow Brick Road"
+  },
+  { "id": "", "artist": "Buddy Holly", "albumTitle": "20 Golden Greats" },
+  { "id": "", "artist": "Prince", "albumTitle": "Sign 'Peace' the Times" },
+  { "id": "", "artist": "Hank Williams", "albumTitle": "40 Greatest Hits" },
+  { "id": "", "artist": "Miles Davis", "albumTitle": "Bitches Brew" },
+  { "id": "", "artist": "The Who", "albumTitle": "Tommy" },
+  {
+    "id": "",
+    "artist": "Bob Dylan",
+    "albumTitle": "The Freewheelin' Bob Dylan"
+  },
+  { "id": "", "artist": "Elvis Costello", "albumTitle": "This Year's Model" },
+  {
+    "id": "",
+    "artist": "Sly & The Family Stone",
+    "albumTitle": "There's a Riot Goin' On"
+  },
+  { "id": "", "artist": "The Zombies", "albumTitle": "Odessey and Oracle" },
+  {
+    "id": "",
+    "artist": "Frank Sinatra",
+    "albumTitle": "In the Wee Small Hours"
+  },
+  { "id": "", "artist": "Cream", "albumTitle": "Fresh Cream" },
+  { "id": "", "artist": "John Coltrane", "albumTitle": "Giant Steps" },
+  { "id": "", "artist": "James Taylor", "albumTitle": "Sweet Baby James" },
+  {
+    "id": "",
+    "artist": "Ray Charles",
+    "albumTitle": "Modern Sounds in Country and Western Music"
+  },
+  { "id": "", "artist": "Ramones", "albumTitle": "Rocket to Russia" },
+  {
+    "id": "",
+    "artist": "Sam Cooke",
+    "albumTitle": "Portrait of a Legend 1951-1964"
+  },
+  { "id": "", "artist": "David Bowie", "albumTitle": "Hunky Dory" },
+  { "id": "", "artist": "The Rolling Stones", "albumTitle": "Aftermath" },
+  { "id": "", "artist": "The Velvet Underground", "albumTitle": "Loaded" },
+  { "id": "", "artist": "Radiohead", "albumTitle": "The Bends" },
+  {
+    "id": "",
+    "artist": "The Mamas and the Papas",
+    "albumTitle": "If You Can Believe Your Eyes and Ears"
+  },
+  { "id": "", "artist": "Joni Mitchell", "albumTitle": "Court and Spark" },
+  { "id": "", "artist": "Cream", "albumTitle": "Disraeli Gears" },
+  { "id": "", "artist": "The Who", "albumTitle": "The Who Sell Out" },
+  {
+    "id": "",
+    "artist": "The Rolling Stones",
+    "albumTitle": "Out of Our Heads"
+  },
+  {
+    "id": "",
+    "artist": "Derek and the Dominos",
+    "albumTitle": "Layla and Other Assorted Love Songs"
+  },
+  { "id": "", "artist": "Kanye West", "albumTitle": "Late Registration" },
+  { "id": "", "artist": "Etta James", "albumTitle": "At Last!" },
+  { "id": "", "artist": "The Byrds", "albumTitle": "Sweetheart of the Rodeo" },
+  { "id": "", "artist": "Sly & The Family Stone", "albumTitle": "Stand!" },
+  {
+    "id": "",
+    "artist": "Various Artists",
+    "albumTitle": "The Harder They Come"
+  },
+  { "id": "", "artist": "Run D.M.C.", "albumTitle": "Raising Hell" },
+  { "id": "", "artist": "Moby Grape", "albumTitle": "Moby Grape" },
+  { "id": "", "artist": "Janis Joplin", "albumTitle": "Pearl" },
+  { "id": "", "artist": "The Wailers", "albumTitle": "Catch a Fire" },
+  { "id": "", "artist": "The Byrds", "albumTitle": "Younger Than Yesterday" },
+  { "id": "", "artist": "Iggy and The Stooges", "albumTitle": "Raw Power" },
+  { "id": "", "artist": "Talking Heads", "albumTitle": "Remain in Light" },
+  { "id": "", "artist": "Television", "albumTitle": "Marquee Moon" },
+  { "id": "", "artist": "Black Sabbath", "albumTitle": "Paranoid" },
+  {
+    "id": "",
+    "artist": "Various Artists",
+    "albumTitle": "Saturday Night Fever: The Original Movie Sound Track"
+  },
+  {
+    "id": "",
+    "artist": "Bruce Springsteen",
+    "albumTitle": "The Wild, the Innocent & the E Street Shuffle"
+  },
+  { "id": "", "artist": "The Notorious B.I.G.", "albumTitle": "Ready to Die" },
+  { "id": "", "artist": "Pavement", "albumTitle": "Slanted and Enchanted" },
+  { "id": "", "artist": "Elton John", "albumTitle": "Greatest Hits" },
+  { "id": "", "artist": "The Replacements", "albumTitle": "Tim" },
+  { "id": "", "artist": "Dr. Dre", "albumTitle": "The Chronic" },
+  { "id": "", "artist": "The Meters", "albumTitle": "Rejuvenation" },
+  { "id": "", "artist": "Blondie", "albumTitle": "Parallel Lines" },
+  { "id": "", "artist": "B.B. King", "albumTitle": "Live at the Regal" },
+  {
+    "id": "",
+    "artist": "Phil Spector",
+    "albumTitle": "A Christmas Gift for You From Phil Spector"
+  },
+  {
+    "id": "",
+    "artist": "Dr. John, the Night Tripper",
+    "albumTitle": "Gris-Gris"
+  },
+  { "id": "", "artist": "N.W.A", "albumTitle": "Straight Outta Compton" },
+  { "id": "", "artist": "Steely Dan", "albumTitle": "Aja" },
+  {
+    "id": "",
+    "artist": "Jefferson Airplane",
+    "albumTitle": "Surrealistic Pillow"
+  },
+  {
+    "id": "",
+    "artist": "Crosby, Stills, Nash & Young",
+    "albumTitle": "Deja vu"
+  },
+  { "id": "", "artist": "Led Zeppelin", "albumTitle": "Houses of the Holy" },
+  { "id": "", "artist": "Santana", "albumTitle": "Santana" },
+  {
+    "id": "",
+    "artist": "Bruce Springsteen",
+    "albumTitle": "Darkness on the Edge of Town"
+  },
+  { "id": "", "artist": "Arcade Fire", "albumTitle": "Funeral" },
+  { "id": "", "artist": "The B 52's", "albumTitle": "The B 52's / Play Loud" },
+  {
+    "id": "",
+    "artist": "A Tribe Called Quest",
+    "albumTitle": "The Low End Theory"
+  },
+  {
+    "id": "",
+    "artist": "Howlin' Wolf",
+    "albumTitle": "Moanin' in the Moonlight"
+  },
+  { "id": "", "artist": "Pretenders", "albumTitle": "Pretenders" },
+  { "id": "", "artist": "Beastie Boys", "albumTitle": "Paul's Boutique" },
+  { "id": "", "artist": "Joy Division", "albumTitle": "Closer" },
+  {
+    "id": "",
+    "artist": "Elton John",
+    "albumTitle": "Captain Fantastic and the Brown Dirt Cowboy"
+  },
+  { "id": "", "artist": "KISS", "albumTitle": "Alive!" },
+  { "id": "", "artist": "T. Rex", "albumTitle": "Electric Warrior" },
+  { "id": "", "artist": "Otis Redding", "albumTitle": "The Dock of the Bay" },
+  { "id": 9, "artist": "Radiohead", "albumTitle": "OK Computer" },
+  { "id": "", "artist": "Prince", "albumTitle": "1999" },
+  {
+    "id": "",
+    "artist": "Linda Ronstadt",
+    "albumTitle": "The Very Best of Linda Ronstadt"
+  },
+  { "id": "", "artist": "Marvin Gaye", "albumTitle": "Let's Get It On" },
+  {
+    "id": "",
+    "artist": "Elvis Costello & The Attractions",
+    "albumTitle": "Imperial Bedroom"
+  },
+  { "id": "", "artist": "Metallica", "albumTitle": "Master of Puppets" },
+  { "id": "", "artist": "Elvis Costello", "albumTitle": "My Aim Is True" },
+  { "id": "", "artist": "Bob Marley & The Wailers", "albumTitle": "Exodus" },
+  { "id": "", "artist": "The Who", "albumTitle": "Live at Leeds" },
+  {
+    "id": "",
+    "artist": "The Byrds",
+    "albumTitle": "The Notorious Byrd Brothers"
+  },
+  {
+    "id": "",
+    "artist": "Rod Stewart",
+    "albumTitle": "Every Picture Tells a Story"
+  },
+  { "id": "", "artist": "Todd Rundgren", "albumTitle": "Something/Anything?" },
+  { "id": "", "artist": "Bob Dylan", "albumTitle": "Desire" },
+  { "id": "", "artist": "Carpenters", "albumTitle": "Close to You" },
+  { "id": "", "artist": "Aerosmith", "albumTitle": "Rocks" },
+  {
+    "id": "",
+    "artist": "Funkadelic",
+    "albumTitle": "One Nation Under a Groove"
+  },
+  {
+    "id": "",
+    "artist": "Curtis Mayfield and The Impressions",
+    "albumTitle": "The Anthology: 1961-1977"
+  },
+  { "id": "", "artist": "ABBA", "albumTitle": "The Definitive Collection" },
+  {
+    "id": "",
+    "artist": "The Rolling Stones",
+    "albumTitle": "The Rolling Stones, Now!"
+  },
+  {
+    "id": "",
+    "artist": "Bob Marley & The Wailers",
+    "albumTitle": "Natty Dread"
+  },
+  { "id": "", "artist": "Fleetwood Mac", "albumTitle": "Fleetwood Mac" },
+  { "id": "", "artist": "Willie Nelson", "albumTitle": "Red Headed Stranger" },
+  { "id": "", "artist": "Madonna", "albumTitle": "The Immaculate Collection" },
+  { "id": "", "artist": "The Stooges", "albumTitle": "The Stooges" },
+  { "id": "", "artist": "Sly & The Family Stone", "albumTitle": "Fresh" },
+  { "id": "", "artist": "Peter Gabriel", "albumTitle": "So" },
+  {
+    "id": "",
+    "artist": "Buffalo Springfield",
+    "albumTitle": "Buffalo Springfield Again"
+  },
+  {
+    "id": "",
+    "artist": "Quicksilver Messenger Service",
+    "albumTitle": "Happy Trails"
+  },
+  {
+    "id": "",
+    "artist": "Elvis Presley",
+    "albumTitle": "From Elvis in Memphis"
+  },
+  { "id": "", "artist": "The Stooges", "albumTitle": "Fun House" },
+  {
+    "id": "",
+    "artist": "The Flying Burrito Brothers",
+    "albumTitle": "The Gilded Palace of Sin"
+  },
+  { "id": "", "artist": "Green Day", "albumTitle": "Dookie" },
+  { "id": "", "artist": "Lou Reed", "albumTitle": "Transformer" },
+  {
+    "id": "",
+    "artist": "John Mayall & The Bluesbreakers",
+    "albumTitle": "Blues Breakers With Eric Clapton ('The Beano Album')"
+  },
+  {
+    "id": "",
+    "artist": "Various Artists",
+    "albumTitle": "Nuggets: Original Artyfacts From the First Psychedelic Era, 1965-1968"
+  },
+  { "id": "", "artist": "R.E.M.", "albumTitle": "Murmur" },
+  {
+    "id": "",
+    "artist": "Little Walter",
+    "albumTitle": "The Best of Little Walter"
+  },
+  { "id": "", "artist": "The Strokes", "albumTitle": "Is This It" },
+  { "id": "", "artist": "AC/DC", "albumTitle": "Highway to Hell" },
+  {
+    "id": "",
+    "artist": "Nine Inch Nails",
+    "albumTitle": "The Downward Spiral"
+  },
+  {
+    "id": "",
+    "artist": "Simon & Garfunkel",
+    "albumTitle": "Parsley, Sage, Rosemary and Thyme"
+  },
+  { "id": "", "artist": "Michael Jackson", "albumTitle": "Bad" },
+  { "id": "", "artist": "Bob Dylan", "albumTitle": "Modern Times" },
+  { "id": "", "artist": "Cream", "albumTitle": "Wheels of Fire" },
+  { "id": "", "artist": "Prince", "albumTitle": "Dirty Mind" },
+  { "id": "", "artist": "Santana", "albumTitle": "Abraxas" },
+  { "id": "", "artist": "Cat Stevens", "albumTitle": "Tea for the Tillerman" },
+  { "id": "", "artist": "Pearl Jam", "albumTitle": "Ten" },
+  {
+    "id": "",
+    "artist": "Neil Young & Crazy Horse",
+    "albumTitle": "Everybody Knows This Is Nowhere"
+  },
+  { "id": "", "artist": "Pink Floyd", "albumTitle": "Wish You Were Here" },
+  { "id": "", "artist": "Pavement", "albumTitle": "Crooked Rain Crooked Rain" },
+  { "id": "", "artist": "The Rolling Stones", "albumTitle": "Tattoo You" },
+  {
+    "id": "",
+    "artist": "Ike & Tina Turner",
+    "albumTitle": "Proud Mary: The Best of Ike and Tina Turner"
+  },
+  { "id": "", "artist": "New York Dolls", "albumTitle": "New York Dolls" },
+  {
+    "id": "",
+    "artist": "Bo Diddley",
+    "albumTitle": "Bo Diddley / Go Bo Diddley"
+  },
+  {
+    "id": "",
+    "artist": "Bobby 'Blue' Bland",
+    "albumTitle": "Two Steps From the Blues"
+  },
+  { "id": "", "artist": "The Smiths", "albumTitle": "The Queen Is Dead" },
+  { "id": "", "artist": "Beastie Boys", "albumTitle": "Licensed to Ill" },
+  { "id": "", "artist": "The Meters", "albumTitle": "Look-Ka Py Py" },
+  { "id": "", "artist": "My Bloody Valentine", "albumTitle": "Loveless" },
+  {
+    "id": "",
+    "artist": "Professor Longhair",
+    "albumTitle": "New Orleans Piano"
+  },
+  { "id": "", "artist": "U2", "albumTitle": "War" },
+  {
+    "id": "",
+    "artist": "Neil Diamond",
+    "albumTitle": "The Neil Diamond Collection"
+  },
+  { "id": "", "artist": "Green Day", "albumTitle": "American Idiot" },
+  { "id": "", "artist": "Bruce Springsteen", "albumTitle": "Nebraska" },
+  { "id": "", "artist": "Pixies", "albumTitle": "Doolittle" },
+  { "id": "", "artist": "Eric B. & Rakim", "albumTitle": "Paid in Full" },
+  { "id": "", "artist": "Aerosmith", "albumTitle": "Toys in the Attic" },
+  { "id": "", "artist": "Bonnie Raitt", "albumTitle": "Nick of Time" },
+  { "id": "", "artist": "Queen", "albumTitle": "A Night at the Opera" },
+  { "id": "", "artist": "The Kinks", "albumTitle": "The Kink Kronikles" },
+  { "id": "", "artist": "The Byrds", "albumTitle": "Mr. Tambourine Man" },
+  { "id": "", "artist": "Simon & Garfunkel", "albumTitle": "Bookends" },
+  {
+    "id": "",
+    "artist": "Patsy Cline",
+    "albumTitle": "The Ultimate Collection"
+  },
+  { "id": "", "artist": "Jackie Wilson", "albumTitle": "Mr. Excitement!" },
+  { "id": "", "artist": "The Who", "albumTitle": "My Generation" },
+  { "id": "", "artist": "Howlin' Wolf", "albumTitle": "Howlin' Wolf" },
+  { "id": 10, "artist": "Madonna", "albumTitle": "Like a Prayer" },
+  { "id": "", "artist": "Steely Dan", "albumTitle": "Can't Buy a Thrill" },
+  { "id": "", "artist": "The Replacements", "albumTitle": "Let It Be" },
+  { "id": "", "artist": "Run D.M.C.", "albumTitle": "Run D.M.C." },
+  { "id": "", "artist": "Black Sabbath", "albumTitle": "Black Sabbath" },
+  { "id": "", "artist": "Eminem", "albumTitle": "The Marshall Mathers LP" },
+  {
+    "id": "",
+    "artist": "Jerry Lee Lewis",
+    "albumTitle": "All Killer No Filler! The Jerry Lee Lewis Anthology"
+  },
+  {
+    "id": "",
+    "artist": "The Mothers of Invention",
+    "albumTitle": "Freak Out!"
+  },
+  { "id": "", "artist": "The Grateful Dead", "albumTitle": "Live/Dead" },
+  {
+    "id": "",
+    "artist": "Ornette Coleman",
+    "albumTitle": "The Shape of Jazz to Come"
+  },
+  { "id": "", "artist": "R.E.M.", "albumTitle": "Automatic for the People" },
+  { "id": "", "artist": "Jay Z", "albumTitle": "Reasonable Doubt" },
+  { "id": "", "artist": "David Bowie", "albumTitle": "Low" },
+  { "id": "", "artist": "Jay Z", "albumTitle": "The Blueprint" },
+  { "id": "", "artist": "Bruce Springsteen", "albumTitle": "The River" },
+  {
+    "id": "",
+    "artist": "Otis Redding",
+    "albumTitle": "Complete & Unbelievable: The Otis Redding Dictionary of Soul"
+  },
+  {
+    "id": "",
+    "artist": "Metallica",
+    "albumTitle": "Metallica ('The Black Album')"
+  },
+  { "id": "", "artist": "Kraftwerk", "albumTitle": "Trans Europa Express" },
+  { "id": "", "artist": "Whitney Houston", "albumTitle": "Whitney Houston" },
+  {
+    "id": "",
+    "artist": "The Kinks",
+    "albumTitle": "The Kinks Are The Village Green Preservation Society"
+  },
+  { "id": "", "artist": "Janet", "albumTitle": "The Velvet Rope" },
+  { "id": "", "artist": "Willie Nelson", "albumTitle": "Stardust" },
+  { "id": "", "artist": "Grateful Dead", "albumTitle": "American Beauty" },
+  {
+    "id": "",
+    "artist": "Crosby, Stills & Nash",
+    "albumTitle": "Crosby, Stills & Nash"
+  },
+  { "id": "", "artist": "Tracy Chapman", "albumTitle": "Tracy Chapman" },
+  { "id": "", "artist": "Grateful Dead", "albumTitle": "Workingman's Dead" },
+  {
+    "id": "",
+    "artist": "Ray Charles",
+    "albumTitle": "The Genius of Ray Charles"
+  },
+  {
+    "id": "",
+    "artist": "Blood, Sweat & Tears",
+    "albumTitle": "Child Is Father to the Man"
+  },
+  { "id": "", "artist": "The Who", "albumTitle": "Quadrophenia" },
+  { "id": "", "artist": "Paul Simon", "albumTitle": "Paul Simon" },
+  {
+    "id": "",
+    "artist": "The Jesus and Mary Chain",
+    "albumTitle": "Psychocandy"
+  },
+  { "id": "", "artist": "The Rolling Stones", "albumTitle": "Some Girls" },
+  {
+    "id": "",
+    "artist": "The Beach Boys",
+    "albumTitle": "The Beach Boys Today!"
+  },
+  { "id": "", "artist": "Sleater Kinney", "albumTitle": "Dig Me Out" },
+  {
+    "id": "",
+    "artist": "Smokey Robinson & The Miracles",
+    "albumTitle": "Going to a Go-Go"
+  },
+  { "id": "", "artist": "LaBelle", "albumTitle": "Nightbirds" },
+  { "id": "", "artist": "Eminem", "albumTitle": "The Slim Shady LP" },
+  { "id": "", "artist": "Parliament", "albumTitle": "Mothership Connection" },
+  { "id": "", "artist": "Janet Jackson", "albumTitle": "Rhythm Nation 1814" },
+  {
+    "id": "",
+    "artist": "Various",
+    "albumTitle": "Anthology of American Folk Music"
+  },
+  { "id": "", "artist": "David Bowie", "albumTitle": "Aladdin Sane" },
+  { "id": "", "artist": "U2", "albumTitle": "All That You Can't Leave Behind" },
+  { "id": "", "artist": "Mary J. Blige", "albumTitle": "My Life" },
+  { "id": "", "artist": "Muddy Waters", "albumTitle": "Folk Singer" },
+  { "id": "", "artist": "Barry White", "albumTitle": "Can't Get Enough" },
+  { "id": "", "artist": "The Cars", "albumTitle": "The Cars" },
+  { "id": "", "artist": "Stevie Wonder", "albumTitle": "Music of My Mind" },
+  {
+    "id": "",
+    "artist": "Al Green",
+    "albumTitle": "I'm Still in Love With You"
+  },
+  { "id": "", "artist": "X", "albumTitle": "Los Angeles" },
+  { "id": "", "artist": "Grateful Dead", "albumTitle": "Anthem of the Sun" },
+  {
+    "id": "",
+    "artist": "The Kinks",
+    "albumTitle": "Something Else by The Kinks"
+  },
+  { "id": "", "artist": "Al Green", "albumTitle": "Call Me" },
+  { "id": "", "artist": "Talking Heads", "albumTitle": "Talking Heads: 77" },
+  {
+    "id": "",
+    "artist": "Bob Dylan and the Band",
+    "albumTitle": "The Basement Tapes"
+  },
+  {
+    "id": "",
+    "artist": "The Velvet Underground",
+    "albumTitle": "White Light/White Heat"
+  },
+  { "id": "", "artist": "MC5", "albumTitle": "Kick Out the Jams" },
+  {
+    "id": "",
+    "artist": "Leonard Cohen",
+    "albumTitle": "Songs of Love and Hate"
+  },
+  { "id": "", "artist": "The Smiths", "albumTitle": "Meat Is Murder" },
+  {
+    "id": "",
+    "artist": "The Mothers of Invention",
+    "albumTitle": "We're Only in It for the Money"
+  },
+  { "id": "", "artist": "Kanye West", "albumTitle": "The College Dropout" },
+  { "id": "", "artist": "Weezer", "albumTitle": "Weezer (Blue Album)" },
+  { "id": "", "artist": "Black Sabbath", "albumTitle": "Master of Reality" },
+  { "id": "", "artist": "Dolly Parton", "albumTitle": "Coat of Many Colors" },
+  {
+    "id": "",
+    "artist": "Public Enemy",
+    "albumTitle": "Fear of a Black Planet"
+  },
+  { "id": "", "artist": "Bob Dylan", "albumTitle": "John Wesley Harding" },
+  { "id": "", "artist": "Jeff Buckley", "albumTitle": "Grace" },
+  {
+    "id": "",
+    "artist": "Lucinda Williams",
+    "albumTitle": "Car Wheels on a Gravel Road"
+  },
+  { "id": "", "artist": "Beck", "albumTitle": "Odelay" },
+  { "id": "", "artist": "The Beatles", "albumTitle": "A Hard Day's Night" },
+  {
+    "id": "",
+    "artist": "Frank Sinatra",
+    "albumTitle": "Songs for Swingin' Lovers!"
+  },
+  {
+    "id": "",
+    "artist": "Creedence Clearwater Revival",
+    "albumTitle": "Willy and the Poor Boys"
+  },
+  {
+    "id": "",
+    "artist": "Red Hot Chili Peppers",
+    "albumTitle": "Blood Sugar Sex Magik"
+  },
+  { "id": "", "artist": "Various", "albumTitle": "The Sun Records Collection" },
+  {
+    "id": "",
+    "artist": "Jane's Addiction",
+    "albumTitle": "Nothing's Shocking"
+  },
+  { "id": "", "artist": "Nirvana", "albumTitle": "MTV Unplugged in New York" },
+  {
+    "id": "",
+    "artist": "Lauryn Hill",
+    "albumTitle": "The Miseducation of Lauryn Hill"
+  },
+  {
+    "id": "",
+    "artist": "Tom Petty and the Heartbreakers",
+    "albumTitle": "Damn the Torpedoes"
+  },
+  { "id": "", "artist": "Pixies", "albumTitle": "Surfer Rosa" },
+  { "id": "", "artist": "The O'Jays", "albumTitle": "Back Stabbers" },
+  { "id": "", "artist": "The Wailers", "albumTitle": "Burnin'" },
+  { "id": "", "artist": "Radiohead", "albumTitle": "Amnesiac" },
+  { "id": "", "artist": "Nick Drake", "albumTitle": "Pink Moon" },
+  { "id": "", "artist": "Randy Newman", "albumTitle": "Sail Away" },
+  { "id": "", "artist": "The Police", "albumTitle": "Ghost in the Machine" },
+  { "id": "", "artist": "David Bowie", "albumTitle": "Station to Station" },
+  { "id": "", "artist": "Eric Clapton", "albumTitle": "Slowhand" },
+  { "id": "", "artist": "The Cure", "albumTitle": "Disintegration" },
+  { "id": "", "artist": "Liz Phair", "albumTitle": "Exile in Guyville" },
+  { "id": "", "artist": "Sonic Youth", "albumTitle": "Daydream Nation" },
+  { "id": "", "artist": "James Brown", "albumTitle": "In the Jungle Groove" },
+  { "id": "", "artist": "The Beatles", "albumTitle": "Help!" },
+  {
+    "id": "",
+    "artist": "Richard & Linda Thompson",
+    "albumTitle": "Shoot Out the Lights"
+  },
+  { "id": "", "artist": "X", "albumTitle": "Wild Gift" },
+  {
+    "id": "",
+    "artist": "Graham Parker & The Rumour",
+    "albumTitle": "Squeezing Out Sparks"
+  },
+  { "id": "", "artist": "Soundgarden", "albumTitle": "Superunknown" },
+  { "id": "", "artist": "Radiohead", "albumTitle": "In Rainbows" },
+  { "id": "", "artist": "Jethro Tull", "albumTitle": "Aqualung" },
+  {
+    "id": "",
+    "artist": "Big Brother & the Holding Company",
+    "albumTitle": "Cheap Thrills"
+  },
+  {
+    "id": "",
+    "artist": "Tom Waits",
+    "albumTitle": "The Heart of Saturday Night"
+  },
+  { "id": "", "artist": "Black Flag", "albumTitle": "Damaged" },
+  { "id": 7, "artist": "Moby", "albumTitle": "Play" },
+  { "id": "", "artist": "Depeche Mode", "albumTitle": "Violator" },
+  { "id": "", "artist": "Meat Loaf", "albumTitle": "Bat Out of Hell" },
+  { "id": "", "artist": "Lou Reed", "albumTitle": "Berlin" },
+  { "id": "", "artist": "Talking Heads", "albumTitle": "Stop Making Sense" },
+  { "id": "", "artist": "De La Soul", "albumTitle": "3 Feet High and Rising" },
+  {
+    "id": "",
+    "artist": "Pink Floyd",
+    "albumTitle": "The Piper at the Gates of Dawn"
+  },
+  {
+    "id": "",
+    "artist": "Muddy Waters",
+    "albumTitle": "Muddy Waters at Newport 1960"
+  },
+  { "id": "", "artist": "Jay Z", "albumTitle": "The Black Album" },
+  { "id": "", "artist": "The Yardbirds", "albumTitle": "Roger the Engineer" },
+  {
+    "id": "",
+    "artist": "Neil Young & Crazy Horse",
+    "albumTitle": "Rust Never Sleeps"
+  },
+  { "id": 8, "artist": "Dire Straits", "albumTitle": "Brothers in Arms" },
+  {
+    "id": "",
+    "artist": "Kanye West",
+    "albumTitle": "My Beautiful Dark Twisted Fantasy"
+  },
+  { "id": "", "artist": "Billy Joel", "albumTitle": "52nd Street" },
+  { "id": "", "artist": "The Yardbirds", "albumTitle": "Having a Rave Up" },
+  { "id": "", "artist": "Randy Newman", "albumTitle": "12 Songs" },
+  {
+    "id": "",
+    "artist": "The Rolling Stones",
+    "albumTitle": "Between the Buttons"
+  },
+  { "id": "", "artist": "Miles Davis", "albumTitle": "Sketches of Spain" },
+  { "id": "", "artist": "Elton John", "albumTitle": "Honky Chteau" },
+  { "id": "", "artist": "Buzzcocks", "albumTitle": "Singles Going Steady" },
+  { "id": "", "artist": "OutKast", "albumTitle": "Stankonia" },
+  {
+    "id": "",
+    "artist": "The Smashing Pumpkins",
+    "albumTitle": "Siamese Dream"
+  },
+  { "id": "", "artist": "New Order", "albumTitle": "Substance 1987" },
+  { "id": "", "artist": "The Doors", "albumTitle": "L.A. Woman" },
+  {
+    "id": "",
+    "artist": "Rage Against the Machine",
+    "albumTitle": "Rage Against the Machine"
+  },
+  { "id": "", "artist": "Johnny Cash", "albumTitle": "American Recordings" },
+  { "id": "", "artist": "Madonna", "albumTitle": "Ray of Light" },
+  { "id": "", "artist": "Eagles", "albumTitle": "Eagles" },
+  { "id": "", "artist": "The Smiths", "albumTitle": "Louder Than Bombs" },
+  { "id": "", "artist": "Mott the Hoople", "albumTitle": "Mott" },
+  {
+    "id": "",
+    "artist": "Arctic Monkeys",
+    "albumTitle": "Whatever People Say I Am, That's What I'm Not"
+  },
+  { "id": "", "artist": "The Police", "albumTitle": "Reggatta de Blanc" },
+  { "id": "", "artist": "Jefferson Airplane", "albumTitle": "Volunteers" },
+  { "id": "", "artist": "Roxy Music", "albumTitle": "Siren" },
+  { "id": "", "artist": "Jackson Browne", "albumTitle": "Late for the Sky" },
+  { "id": "", "artist": "Bjork", "albumTitle": "Post" },
+  {
+    "id": "",
+    "artist": "John Lee Hooker",
+    "albumTitle": "The Ultimate Collection: 1948-1990"
+  },
+  {
+    "id": "",
+    "artist": "Oasis",
+    "albumTitle": "(What's the Story) Morning Glory?"
+  },
+  { "id": "", "artist": "TLC", "albumTitle": "CrazySexyCool" },
+  { "id": "", "artist": "Toots & The Maytals", "albumTitle": "Funky Kingston" },
+  { "id": "", "artist": "The Beach Boys", "albumTitle": "The Smile Sessions" },
+  {
+    "id": "",
+    "artist": "The Modern Lovers",
+    "albumTitle": "The Modern Lovers"
+  },
+  {
+    "id": "",
+    "artist": "Talking Heads",
+    "albumTitle": "More Songs About Buildings and Food"
+  },
+  { "id": "", "artist": "The Who", "albumTitle": "A Quick One" },
+  { "id": "", "artist": "Bob Dylan", "albumTitle": "'Love and Theft'" },
+  { "id": "", "artist": "Steely Dan", "albumTitle": "Pretzel Logic" },
+  {
+    "id": "",
+    "artist": "Wu Tang Clan",
+    "albumTitle": "Enter the Wu_Tang: 36 Chambers"
+  },
+  {
+    "id": "",
+    "artist": "Various Artists",
+    "albumTitle": "The Indestructible Beat of Soweto"
+  },
+  {
+    "id": "",
+    "artist": "Don Henley",
+    "albumTitle": "The End of the Innocence"
+  },
+  { "id": "", "artist": "The White Stripes", "albumTitle": "Elephant" },
+  { "id": "", "artist": "Jackson Browne", "albumTitle": "The Pretender" },
+  { "id": "", "artist": "The Beatles", "albumTitle": "Let It Be" },
+  { "id": "", "artist": "M.I.A.", "albumTitle": "Kala" },
+  { "id": "", "artist": "Randy Newman", "albumTitle": "Good Old Boys" },
+  { "id": "", "artist": "LCD Soundsystem", "albumTitle": "Sound of Silver" },
+  { "id": "", "artist": "Roxy Music", "albumTitle": "For Your Pleasure" },
+  { "id": "", "artist": "Massive Attack", "albumTitle": "Blue Lines" },
+  { "id": "", "artist": "ZZ Top", "albumTitle": "Eliminator" },
+  { "id": "", "artist": "Tom Waits", "albumTitle": "Rain Dogs" },
+  {
+    "id": "",
+    "artist": "The Temptations",
+    "albumTitle": "Anthology: The Best of The Temptations"
+  },
+  {
+    "id": "",
+    "artist": "Red Hot Chili Peppers",
+    "albumTitle": "Californication"
+  },
+  { "id": "", "artist": "Nas", "albumTitle": "Illmatic" },
+  {
+    "id": "",
+    "artist": "Lynyrd Skynyrd",
+    "albumTitle": "(pronounced 'leh-'nerd 'skin-'nerd)"
+  },
+  { "id": "", "artist": "Dr. John", "albumTitle": "Dr. John's Gumbo" },
+  { "id": "", "artist": "Big Star", "albumTitle": "Radio City" },
+  { "id": "", "artist": "PJ Harvey", "albumTitle": "Rid of Me" },
+  { "id": "", "artist": "The Clash", "albumTitle": "Sandinista!" },
+  {
+    "id": "",
+    "artist": "Sinead O'Connor",
+    "albumTitle": "I Do Not Want What I Haven't Got"
+  },
+  { "id": "", "artist": "The Doors", "albumTitle": "Strange Days" },
+  { "id": "", "artist": "Bob Dylan", "albumTitle": "Time Out of Mind" },
+  { "id": "", "artist": "Eric Clapton", "albumTitle": "461 Ocean Boulevard" },
+  { "id": "", "artist": "Wire", "albumTitle": "Pink Flag" },
+  {
+    "id": "",
+    "artist": "Minutemen",
+    "albumTitle": "Double Nickels on the Dime"
+  },
+  { "id": "", "artist": "The Go Go's", "albumTitle": "Beauty and the Beat" },
+  { "id": "", "artist": "Van Halen", "albumTitle": "Van Halen" },
+  { "id": "", "artist": "Tom Waits", "albumTitle": "Mule Variations" },
+  { "id": "", "artist": "U2", "albumTitle": "Boy" },
+  {
+    "id": "",
+    "artist": "Paul McCartney & Wings",
+    "albumTitle": "Band on the Run"
+  },
+  { "id": "", "artist": "Portishead", "albumTitle": "Dummy" },
+  {
+    "id": "",
+    "artist": "The Crickets",
+    "albumTitle": "The 'Chirping' Crickets"
+  },
+  {
+    "id": "",
+    "artist": "Various Artists",
+    "albumTitle": "The Best of the Girl Groups, Volume 1"
+  },
+  {
+    "id": "",
+    "artist": "The Ronettes",
+    "albumTitle": "Presenting the Fabulous Ronettes Featuring Veronica"
+  },
+  {
+    "id": "",
+    "artist": "Diana Ross & The Supremes",
+    "albumTitle": "Anthology"
+  },
+  { "id": "", "artist": "Bruce Springsteen", "albumTitle": "The Rising" },
+  { "id": "", "artist": "Gram Parsons", "albumTitle": "Grievous Angel" },
+  { "id": "", "artist": "Cheap Trick", "albumTitle": "Cheap Trick at Budokan" },
+  { "id": "", "artist": "Peter Wolf", "albumTitle": "Sleepless" },
+  { "id": "", "artist": "The Police", "albumTitle": "Outlandos d'Amour" },
+  { "id": "", "artist": "Brian Eno", "albumTitle": "Another Green World" },
+  { "id": "", "artist": "Vampire Weekend", "albumTitle": "Vampire Weekend" },
+  {
+    "id": "",
+    "artist": "PJ Harvey",
+    "albumTitle": "Stories From the City, Stories From the Sea"
+  },
+  { "id": "", "artist": "Brian Eno", "albumTitle": "Here Come the Warm Jets" },
+  {
+    "id": "",
+    "artist": "George Harrison",
+    "albumTitle": "All Things Must Pass"
+  },
+  { "id": "", "artist": "Big Star", "albumTitle": "#1 Record" },
+  { "id": "", "artist": "Nirvana", "albumTitle": "In Utero" },
+  { "id": "", "artist": "Beck", "albumTitle": "Sea Change" },
+  { "id": "", "artist": "Lil Wayne", "albumTitle": "Tha Carter III" },
+  { "id": "", "artist": "The Cure", "albumTitle": "Boys Don't Cry" },
+  {
+    "id": "",
+    "artist": "Sam Cooke",
+    "albumTitle": "Live at the Harlem Square Club, 1963"
+  },
+  { "id": "", "artist": "The Pogues", "albumTitle": "Rum Sodomy & the Lash" },
+  { "id": "", "artist": "Suicide", "albumTitle": "Suicide" },
+  {
+    "id": "",
+    "artist": "DEVO",
+    "albumTitle": "Q: Are We Not Men? A: We Are Devo!"
+  },
+  { "id": "", "artist": "Cheap Trick", "albumTitle": "In Color" },
+  { "id": "", "artist": "War", "albumTitle": "The World Is a Ghetto" },
+  {
+    "id": "",
+    "artist": "Steve Miller Band",
+    "albumTitle": "Fly Like an Eagle"
+  },
+  { "id": "", "artist": "MC5", "albumTitle": "Back in the USA" },
+  {
+    "id": "",
+    "artist": "Stan GetzÊ/ÊJoao GilbertoÊfeaturingÊAntonio Carlos Jobim",
+    "albumTitle": "Getz / Gilberto"
+  },
+  { "id": "", "artist": "The Police", "albumTitle": "Synchronicity" },
+  { "id": "", "artist": "Big Star", "albumTitle": "Third/Sister Lovers" },
+  { "id": "", "artist": "Jackson Browne", "albumTitle": "For Everyman" },
+  { "id": 11, "artist": "Amy Winehouse", "albumTitle": "Back to Black" },
+  { "id": "", "artist": "John Prine", "albumTitle": "John Prine" },
+  { "id": "", "artist": "EPMD", "albumTitle": "Strictly Business" },
+  { "id": "", "artist": "Alice Cooper", "albumTitle": "Love It to Death" },
+  {
+    "id": "",
+    "artist": "Los Lobos",
+    "albumTitle": "How Will the Wolf Survive?"
+  },
+  { "id": "", "artist": "Marvin Gaye", "albumTitle": "Here, My Dear" },
+  { "id": "", "artist": "My Morning Jacket", "albumTitle": "Z" },
+  { "id": "", "artist": "Elton John", "albumTitle": "Tumbleweed Connection" },
+  {
+    "id": "",
+    "artist": "The Drifters",
+    "albumTitle": "The Drifters' Golden Hits"
+  },
+  { "id": "", "artist": "Hole", "albumTitle": "Live Through This" },
+  { "id": "", "artist": "Public Image Ltd.", "albumTitle": "Metal Box" },
+  { "id": "", "artist": "R.E.M.", "albumTitle": "Document" },
+  {
+    "id": "",
+    "artist": "Echo and The Bunnymen",
+    "albumTitle": "Heaven Up Here"
+  },
+  { "id": "", "artist": "Def Leppard", "albumTitle": "Hysteria" },
+  { "id": "", "artist": "The Magnetic Fields", "albumTitle": "69 Love Songs" },
+  {
+    "id": "",
+    "artist": "Coldplay",
+    "albumTitle": "A Rush of Blood to the Head"
+  },
+  { "id": "", "artist": "Bruce Springsteen", "albumTitle": "Tunnel of Love" },
+  {
+    "id": "",
+    "artist": "The Paul Butterfield Blues Band",
+    "albumTitle": "The Paul Butterfield Blues Band"
+  },
+  { "id": "", "artist": "Fugees", "albumTitle": "The Score" },
+  { "id": "", "artist": "L.L. Cool J", "albumTitle": "Radio" },
+  {
+    "id": "",
+    "artist": "Richard & Linda Thompson",
+    "albumTitle": "I Want to See the Bright Lights Tonight"
+  },
+  { "id": "", "artist": "George Michael", "albumTitle": "Faith" },
+  { "id": "", "artist": "The Smiths", "albumTitle": "The Smiths" },
+  {
+    "id": "",
+    "artist": "Manu Chao",
+    "albumTitle": "Proxima estacion: Esperanza"
+  },
+  {
+    "id": "",
+    "artist": "Elvis Costello & The Attractions",
+    "albumTitle": "Armed Forces"
+  },
+  {
+    "id": "",
+    "artist": "The Notorious B.I.G.",
+    "albumTitle": "Life After Death"
+  },
+  { "id": "", "artist": "Merle Haggard", "albumTitle": "Down Every Road" },
+  {
+    "id": "",
+    "artist": "Loretta Lynn",
+    "albumTitle": "All Time Greatest Hits"
+  },
+  { "id": "", "artist": "Funkadelic", "albumTitle": "Maggot Brain" },
+  { "id": "", "artist": "Raekwon", "albumTitle": "Only Built 4 Cuban Linx" },
+  { "id": "", "artist": "D'Angelo", "albumTitle": "Voodoo" },
+  { "id": "", "artist": "Steve Earle", "albumTitle": "Guitar Town" },
+  { "id": "", "artist": "Gang of Four", "albumTitle": "Entertainment!" },
+  {
+    "id": "",
+    "artist": "Mott the Hoople",
+    "albumTitle": "All the Young Dudes"
+  },
+  { "id": "", "artist": "Pearl Jam", "albumTitle": "Vitalogy" },
+  {
+    "id": "",
+    "artist": "Earth, Wind & Fire",
+    "albumTitle": "That's the Way of the World"
+  },
+  { "id": "", "artist": "Cyndi Lauper", "albumTitle": "She's So Unusual" },
+  { "id": "", "artist": "Husker Du", "albumTitle": "New Day Rising" },
+  { "id": "", "artist": "KISS", "albumTitle": "Destroyer" },
+  { "id": "", "artist": "ZZ Top", "albumTitle": "Tres hombres" },
+  { "id": "", "artist": "Albert King", "albumTitle": "Born Under a Bad Sign" },
+  { "id": "", "artist": "Eurythmics", "albumTitle": "Touch" },
+  { "id": "", "artist": "Wilco", "albumTitle": "Yankee Hotel Foxtrot" },
+  { "id": "", "artist": "MGMT", "albumTitle": "Oracular Spectacular" },
+  { "id": "", "artist": "Bonnie Raitt", "albumTitle": "Give It Up" },
+  { "id": "", "artist": "Boz Scaggs", "albumTitle": "Boz Scaggs" },
+  {
+    "id": "",
+    "artist": "The White Stripes",
+    "albumTitle": "White Blood Cells"
+  },
+  { "id": "", "artist": "The Stone Roses", "albumTitle": "The Stone Roses" },
+  { "id": "", "artist": "B.B. King", "albumTitle": "Live in Cook County Jail" },
+  { "id": "", "artist": "OutKast", "albumTitle": "Aquemini" }
+]

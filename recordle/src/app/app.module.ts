@@ -1,36 +1,34 @@
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ToolbarComponent } from './component/toolbar/toolbar.component';
-
-import { MatAutocompleteModule } from '@angular/material/autocomplete';
-import { MatToolbarModule } from  '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { PuzzleComponent } from './component/puzzle/puzzle.component';
+import { GuessTheAlbumComponent } from './routes/guess-the-album/guess-the-album.component';
+import { NavbarComponent } from './page-elements/navbar/navbar.component';
+import { FooterComponent } from './page-elements/footer/footer.component';
+import { PuzzleComponent } from './components/puzzle/puzzle.component';
+import { PuzzleImageComponent } from './components/puzzle-image/puzzle-image.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent,
-    PuzzleComponent
+    GuessTheAlbumComponent,
+    NavbarComponent,
+    FooterComponent,
+    PuzzleComponent,
+    PuzzleImageComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
+    AppRoutingModule,
+    FontAwesomeModule,
     FormsModule,
-    MatAutocompleteModule,
-    MatButtonModule,
-    MatCardModule,
-    MatFormFieldModule,
-    MatIconModule,
-    MatToolbarModule,
-    ReactiveFormsModule
+    HttpClientModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
