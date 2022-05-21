@@ -103,7 +103,6 @@ export class PuzzleComponent implements OnInit {
     if (navigator.share) { 
       navigator.share({
          title: `PopIdle #${this.puzzleNumber}`,
-         url: 'https://popidle.the-sound.co.uk',
          text: textToShare
       })
       .then(() => {
