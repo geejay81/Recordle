@@ -31,12 +31,12 @@
                         <label class="label" for="guess">Answer</label>
                         <div class="control autocomplete">
                             <input type="text" id="guess"
-                                class="input is-outlined is-medium" 
+                                class="input is-outlined is-medium is-primary" 
                                 autocomplete="off"
                                 name="guess" />
                         </div>
                     </div>
-                    <button type="button" class="button is-light is-medium" id="btnSubmit" (click)="submitGuess()">Submit</button>
+                    <button type="button" class="button is-primary is-medium" id="btnSubmit" (click)="submitGuess()">Submit</button>
                 </div>
                 <div class="content" *ngIf="guesses.length > 0">
                     <ol id="previous-guesses">
@@ -48,12 +48,14 @@
                 <div class="notification is-success content" role="alert">
                     <h2 class="title">Top of the Pops!</h2>
                     <p>You knew that the answer was <b>{{ answer?.albumTitle }}</b> by <b>{{ answer?.artist }}</b>.</p>
+                    <button type="button" (click)="share()" class="button is-inverse is-medium">Share</button>
                 </div>
             </div>
             <div class="column" *ngIf="gameMode == 'lost'">
                 <div class="notification is-danger content" role="alert">
                     <h2 class="title">Better luck next time!</h2>
                     <p>The answer was <b>{{ answer?.albumTitle }}</b> by <b>{{ answer?.artist }}</b>.</p>
+                    <button type="button" (click)="share()" class="button is-inverse is-medium">Share</button>
                 </div>
             </div>
         </div>

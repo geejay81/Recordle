@@ -26,6 +26,9 @@ export class PuzzleComponent implements OnInit {
   img1 = new Image();
   guessInput = document.getElementById("guess");
   guesses: Guess[] = [];
+  correctBox = '🟩';
+  incorrectBox = '🟥';
+  skippedBox = '⬜';
   
   constructor(
     private dataService: DataService
@@ -87,6 +90,58 @@ export class PuzzleComponent implements OnInit {
     return 'fa-solid fa-square';
   }
 
+  share(): void {
+
+    const textToShare = `
+    #PopIdle #${this.puzzleNumber}
+
+    ${this.getResultEmojiBoard()}
+
+    https://popidle.the-sound.co.uk
+    `;
+
+    if (navigator.share) { 
+      navigator.share({
+         title: `PopIdle #${this.puzzleNumber}`,
+         url: 'https://popidle.the-sound.co.uk',
+         text: textToShare
+      })
+      .then(() => {
+        console.log('Thanks for sharing!');
+      })
+      .catch(console.error);
+    } else {
+      // Copy to clipboard instead ...
+      navigator.clipboard.writeText(textToShare).then(() => {
+        alert("Result to clipboard");
+      });
+    };
+  }
+
+  getResultEmojiBoard(): string {
+    let result = '';
+
+    for (let i = 0; i < this.guesses.length; i++) {
+      switch (this.guesses[i].result) {
+        case 'correct':
+          result += this.correctBox;
+          break;
+        case 'incorrect':
+          result += this.incorrectBox;
+          break;
+        default:
+          result += this.skippedBox;
+          break;
+      }
+    }
+
+    for (let i = 0; i < (6 - this.guesses.length); i++) {
+      result += this.skippedBox;
+    }
+
+    return result;
+  }
+
   private handleCorrectAnswer(submission: string) {
     this.logGuess("correct", submission);
     this.setGuessField('');
@@ -117,7 +172,10 @@ export class PuzzleComponent implements OnInit {
   }
 
   private getIdForTodaysPuzzle(): number {
-    return 2;
+    const _MS_PER_DAY = 1000 * 60 * 60 * 24;
+    const startDate = new Date('2022-05-21');
+    const today = new Date();
+    return Math.floor((today.getTime() - startDate.getTime()) / _MS_PER_DAY) + 1;
   }
 
   private showCurrentLevelImage(): void {
