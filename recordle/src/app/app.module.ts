@@ -12,6 +12,8 @@ import { NavbarComponent } from './page-elements/navbar/navbar.component';
 import { FooterComponent } from './page-elements/footer/footer.component';
 import { PuzzleComponent } from './components/puzzle/puzzle.component';
 import { PuzzleImageComponent } from './components/puzzle-image/puzzle-image.component';
+import { SpotifyWidgetComponent } from './components/spotify-widget/spotify-widget.component';
+import { UriPipe } from './pipes/uri.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PuzzleImageComponent } from './components/puzzle-image/puzzle-image.com
     NavbarComponent,
     FooterComponent,
     PuzzleComponent,
-    PuzzleImageComponent
+    PuzzleImageComponent,
+    SpotifyWidgetComponent,
+    UriPipe
   ],
   imports: [
     BrowserModule,
