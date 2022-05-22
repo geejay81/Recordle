@@ -1,22 +1,47 @@
 [
-  { "id": 1, "artist": "Nirvana", "albumTitle": "Nevermind" },
+  { "id": 1, "artist": "Nirvana", "albumTitle": "Nevermind", "embedKey": "2UJcKiJxNryhL050F5Z1Fk" },
   {
     "id": 2,
     "artist": "The Beatles",
-    "albumTitle": "Sgt Pepper's Lonely Hearts Club Band"
+    "albumTitle": "Sgt Pepper's Lonely Hearts Club Band",
+    "embedKey": "6QaVfG1pHYl1z15ZxkvVDW"
   },
-  { "id": 3, "artist": "The Cure", "albumTitle": "Three Imaginary Boys" },
-  { "id": 4, "artist": "Oasis", "albumTitle": "Definitely Maybe" },
+  { "id": 3, "artist": "The Cure", "albumTitle": "Three Imaginary Boys", "embedKey": "0jYmAPQezr1aG75KerJCdG" },
+  { "id": 4, "artist": "Oasis", "albumTitle": "Definitely Maybe", "embedKey": "3LzKUdUTdJb6P7xGN6SotC" },
   {
     "id": 5,
     "artist": "The Velvet Underground",
-    "albumTitle": "The Velvet Underground"
+    "albumTitle": "The Velvet Underground & Nico",
+    "embedKey": "4xwx0x7k6c5VuThz5qVqmV"
   },
-
-  { "id": 6, "artist": "Neil Young", "albumTitle": "Tonight's the Night" },
-  { "id": "", "artist": "The Beach Boys", "albumTitle": "Pet Sounds" },
+  { "id": 6, "artist": "Neil Young", "albumTitle": "Tonight's the Night", "embedKey": "" },
+  { "id": 7, "artist": "Moby", "albumTitle": "Play", "embedKey": "1xB1tmm50ZhXwrNs89u7Jx" },
+  { "id": 8, "artist": "Dire Straits", "albumTitle": "Brothers in Arms" , "embedKey": "0u7sgzvlLmPLvujXxy9EeY"},
+  { "id": 9, "artist": "Radiohead", "albumTitle": "OK Computer", "embedKey": "6dVIqQ8qmQ5GBnJ9shOYGE" },
+  { "id": 10, "artist": "Madonna", "albumTitle": "Like a Prayer", "embedKey": "48AGkmM7iO4jrELRnNZGPV" },
+  { "id": 11, "artist": "Amy Winehouse", "albumTitle": "Back to Black", "embedKey": "097eYvf9NKjFnv4xA9s2oV" },{
+    "id": 12,
+    "artist": "Pink Floyd",
+    "albumTitle": "The Dark Side of the Moon",
+    "embedKey": "2WT1pbYjLJciAR26yMebkH"
+  },
+  { "id": 13, "artist": "The Beach Boys", "albumTitle": "Pet Sounds", "embedKey": "6GphKx2QAPRoVGWE9D7ou8" },
+  { "id": 14, "artist": "Bob Dylan", "albumTitle": "Highway 61 Revisited", "embedKey": "6YabPKtZAjxwyWbuO9p4ZD" },
+  { "id": 15, "artist": "The Clash", "albumTitle": "London Calling", "embedKey": "3TZuLZx0zB3Q45aQXDswb9" },
+  { "id": "", "artist": "Joni Mitchell", "albumTitle": "Blue", "embedKey": "" },
+  {
+    "id": 16,
+    "artist": "Guns N' Roses",
+    "albumTitle": "Appetite for Destruction",
+    "embedKey": "3I9Z1nDCL4E0cP62flcbI5"
+  },
+  {
+    "id": 17,
+    "artist": "Bruce Springsteen",
+    "albumTitle": "Born in the U.S.A.",
+    "embedKey": "0PMasrHdpaoIRuHuhHp72O"
+  },
   { "id": "", "artist": "The Beatles", "albumTitle": "Revolver" },
-  { "id": "", "artist": "Bob Dylan", "albumTitle": "Highway 61 Revisited" },
   { "id": "", "artist": "The Beatles", "albumTitle": "Rubber Soul" },
   { "id": "", "artist": "Marvin Gaye", "albumTitle": "What's Going On" },
   {
@@ -24,7 +49,6 @@
     "artist": "The Rolling Stones",
     "albumTitle": "Exile on Main St."
   },
-  { "id": "", "artist": "The Clash", "albumTitle": "London Calling" },
   { "id": "", "artist": "Bob Dylan", "albumTitle": "Blonde on Blonde" },
   {
     "id": "",
@@ -33,11 +57,6 @@
   },
   { "id": "", "artist": "Elvis Presley", "albumTitle": "The Sun Sessions" },
   { "id": "", "artist": "Miles Davis", "albumTitle": "Kind of Blue" },
-  {
-    "id": "",
-    "artist": "The Velvet Underground",
-    "albumTitle": "The Velvet Underground & Nico"
-  },
   { "id": "", "artist": "The Beatles", "albumTitle": "Abbey Road" },
   {
     "id": "",
@@ -69,7 +88,6 @@
   { "id": "", "artist": "U2", "albumTitle": "The Joshua Tree" },
   { "id": "", "artist": "The Who", "albumTitle": "Who's Next" },
   { "id": "", "artist": "Led Zeppelin", "albumTitle": "Led Zeppelin" },
-  { "id": "", "artist": "Joni Mitchell", "albumTitle": "Blue" },
   {
     "id": "",
     "artist": "Bob Dylan",
@@ -94,11 +112,6 @@
     "albumTitle": "Never Mind the Bollocks Here's the Sex Pistols"
   },
   { "id": "", "artist": "The Doors", "albumTitle": "The Doors" },
-  {
-    "id": 12,
-    "artist": "Pink Floyd",
-    "albumTitle": "The Dark Side of the Moon"
-  },
   { "id": "", "artist": "Patti Smith", "albumTitle": "Horses" },
   {
     "id": "",
@@ -161,11 +174,6 @@
     "artist": "Sly & The Family Stone",
     "albumTitle": "Greatest Hits"
   },
-  {
-    "id": "",
-    "artist": "Guns N' Roses",
-    "albumTitle": "Appetite for Destruction"
-  },
   { "id": "", "artist": "U2", "albumTitle": "Achtung Baby" },
   { "id": "", "artist": "The Rolling Stones", "albumTitle": "Sticky Fingers" },
   {
@@ -209,11 +217,6 @@
     "albumTitle": "I Never Loved a Man the Way I Love You"
   },
   { "id": "", "artist": "Aretha Franklin", "albumTitle": "Lady Soul" },
-  {
-    "id": "",
-    "artist": "Bruce Springsteen",
-    "albumTitle": "Born in the U.S.A."
-  },
   { "id": "", "artist": "Pink Floyd", "albumTitle": "The Wall" },
   { "id": "", "artist": "Johnny Cash", "albumTitle": "At Folsom Prison" },
   { "id": "", "artist": "Dusty Springfield", "albumTitle": "Dusty in Memphis" },
@@ -369,7 +372,6 @@
   { "id": "", "artist": "KISS", "albumTitle": "Alive!" },
   { "id": "", "artist": "T. Rex", "albumTitle": "Electric Warrior" },
   { "id": "", "artist": "Otis Redding", "albumTitle": "The Dock of the Bay" },
-  { "id": 9, "artist": "Radiohead", "albumTitle": "OK Computer" },
   { "id": "", "artist": "Prince", "albumTitle": "1999" },
   {
     "id": "",
@@ -542,7 +544,6 @@
   { "id": "", "artist": "Jackie Wilson", "albumTitle": "Mr. Excitement!" },
   { "id": "", "artist": "The Who", "albumTitle": "My Generation" },
   { "id": "", "artist": "Howlin' Wolf", "albumTitle": "Howlin' Wolf" },
-  { "id": 10, "artist": "Madonna", "albumTitle": "Like a Prayer" },
   { "id": "", "artist": "Steely Dan", "albumTitle": "Can't Buy a Thrill" },
   { "id": "", "artist": "The Replacements", "albumTitle": "Let It Be" },
   { "id": "", "artist": "Run D.M.C.", "albumTitle": "Run D.M.C." },
@@ -766,7 +767,6 @@
     "albumTitle": "The Heart of Saturday Night"
   },
   { "id": "", "artist": "Black Flag", "albumTitle": "Damaged" },
-  { "id": 7, "artist": "Moby", "albumTitle": "Play" },
   { "id": "", "artist": "Depeche Mode", "albumTitle": "Violator" },
   { "id": "", "artist": "Meat Loaf", "albumTitle": "Bat Out of Hell" },
   { "id": "", "artist": "Lou Reed", "albumTitle": "Berlin" },
@@ -789,7 +789,6 @@
     "artist": "Neil Young & Crazy Horse",
     "albumTitle": "Rust Never Sleeps"
   },
-  { "id": 8, "artist": "Dire Straits", "albumTitle": "Brothers in Arms" },
   {
     "id": "",
     "artist": "Kanye West",
@@ -1000,7 +999,6 @@
   { "id": "", "artist": "The Police", "albumTitle": "Synchronicity" },
   { "id": "", "artist": "Big Star", "albumTitle": "Third/Sister Lovers" },
   { "id": "", "artist": "Jackson Browne", "albumTitle": "For Everyman" },
-  { "id": 11, "artist": "Amy Winehouse", "albumTitle": "Back to Black" },
   { "id": "", "artist": "John Prine", "albumTitle": "John Prine" },
   { "id": "", "artist": "EPMD", "albumTitle": "Strictly Business" },
   { "id": "", "artist": "Alice Cooper", "albumTitle": "Love It to Death" },

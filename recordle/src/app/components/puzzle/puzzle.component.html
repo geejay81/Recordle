@@ -1,5 +1,6 @@
 <section class="section">
     <div class="container">
+        <h2 class="title">{{ title }}</h2>
         <div class="columns">
             <div class="column">
                 <div id="puzzle-box"></div>
@@ -45,6 +46,7 @@
                 </div>
             </div>
             <div class="column" *ngIf="gameMode == 'won'">
+                <app-spotify-widget *ngIf="answer?.embedKey != ''" [albumId]="answer?.embedKey || ''"></app-spotify-widget>
                 <div class="notification is-success content" role="alert">
                     <h2 class="title">Top of the Pops!</h2>
                     <p>You knew that the answer was <b>{{ answer?.albumTitle }}</b> by <b>{{ answer?.artist }}</b>.</p>
@@ -52,6 +54,7 @@
                 </div>
             </div>
             <div class="column" *ngIf="gameMode == 'lost'">
+                <app-spotify-widget *ngIf="answer?.embedKey != ''" [albumId]="answer?.embedKey || ''"></app-spotify-widget>
                 <div class="notification is-danger content" role="alert">
                     <h2 class="title">Better luck next time!</h2>
                     <p>The answer was <b>{{ answer?.albumTitle }}</b> by <b>{{ answer?.artist }}</b>.</p>

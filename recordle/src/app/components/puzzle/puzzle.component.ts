@@ -1,7 +1,7 @@
 import { PuzzleImageComponent } from './../puzzle-image/puzzle-image.component';
 import { DataService } from './../../services/data.service';
 import { IAlbum } from './../../models/IAlbum';
-import { Component, OnInit, ViewChildren } from '@angular/core';
+import { Component, Input, OnInit, ViewChildren } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { autocomplete } from 'src/assets/scripts/autocomplete';
 import { Guess } from 'src/app/models/guess';
@@ -13,6 +13,7 @@ import { Guess } from 'src/app/models/guess';
 })
 export class PuzzleComponent implements OnInit {
   @ViewChildren(PuzzleImageComponent) puzzleImageComponent!: PuzzleImageComponent;
+  @Input() title: string = '';
 
   gameMode = 'play';
   levels = [40, 30, 20, 15, 10, 5];
