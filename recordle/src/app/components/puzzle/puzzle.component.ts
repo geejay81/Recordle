@@ -145,7 +145,6 @@ export class PuzzleComponent implements OnInit {
   private handleCorrectAnswer(submission: string) {
     this.logGuess("correct", submission);
     this.setGuessField('');
-    // TODO: show won screen.
     this.renderImage(1);
     this.gameMode = 'won';
   }
@@ -154,11 +153,9 @@ export class PuzzleComponent implements OnInit {
     this.logGuess("incorrect", submission);
     this.setGuessField('');
     if (this.guesses.length == this.levels.length) {
-      // TODO: show lost screen.
       this.renderImage(1);
       this.gameMode = 'lost';
     } else {
-      // TODO: prepare next go.
       this.level++;
       this.showCurrentLevelImage();
     }
@@ -210,7 +207,6 @@ export class PuzzleComponent implements OnInit {
     document.getElementById("puzzle-image")?.remove();
     img2.id = "puzzle-image";
     document.getElementById("puzzle-box")?.appendChild(img2);
-    //levelTitle.innerHTML = "Level " + level;
     img2.tabIndex = -1;
     img2.focus();
   }
