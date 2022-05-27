@@ -1,3 +1,4 @@
+import { StateService } from './../../services/state.service';
 import { PuzzleImageComponent } from './../puzzle-image/puzzle-image.component';
 import { DataService } from './../../services/data.service';
 import { IAlbum } from './../../models/IAlbum';
@@ -32,7 +33,8 @@ export class PuzzleComponent implements OnInit {
   skippedBox = '⬜';
   
   constructor(
-    private dataService: DataService
+    private dataService: DataService,
+    private stateService: StateService
   ) { }
 
   ngOnInit(): void {
@@ -58,7 +60,11 @@ export class PuzzleComponent implements OnInit {
   }
 
   initialisePuzzle(): void {
+    const existingState = this.stateService.getState();
     this.puzzleNumber = this.getIdForTodaysPuzzle();
+    if (this.puzzleNumber == existingState.puzzleNumber) {
+      this.guesses = existingState.guesses;
+    };
     this.answer = this.puzzleData.filter(m => m.id.toString() === this.puzzleNumber?.toString())[0];
     this.img1.width = 300;
     this.img1.height = 300;
@@ -166,6 +172,7 @@ export class PuzzleComponent implements OnInit {
     guessToLog.answer = answer;
     guessToLog.result = result;
     this.guesses.push(guessToLog);
+    this.saveState();
   }
 
   private getIdForTodaysPuzzle(): number {
@@ -217,6 +224,13 @@ export class PuzzleComponent implements OnInit {
 
   private getGuessField(): string {
     return (<HTMLInputElement>document.getElementById("guess")).value;
+  }
+
+  private saveState(): void {
+    this.stateService.setState(
+      this.puzzleNumber!,
+      this.guesses
+    );
   }
 }
 
