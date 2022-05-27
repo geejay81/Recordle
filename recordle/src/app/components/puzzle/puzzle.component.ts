@@ -64,6 +64,11 @@ export class PuzzleComponent implements OnInit {
     this.puzzleNumber = this.getIdForTodaysPuzzle();
     if (this.puzzleNumber == existingState.puzzleNumber) {
       this.guesses = existingState.guesses;
+      if (this.guesses[this.guesses.length - 1].result == 'correct') {
+        this.gameMode = 'won';
+      } else if (this.guesses.length === 6) {
+        this.gameMode = 'lost';
+      }
     };
     this.answer = this.puzzleData.filter(m => m.id.toString() === this.puzzleNumber?.toString())[0];
     this.img1.width = 300;
