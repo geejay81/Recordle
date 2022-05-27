@@ -1,3 +1,4 @@
+import { HistoryService } from './../../services/history.service';
 import { StateService } from './../../services/state.service';
 import { PuzzleImageComponent } from './../puzzle-image/puzzle-image.component';
 import { DataService } from './../../services/data.service';
@@ -34,6 +35,7 @@ export class PuzzleComponent implements OnInit {
   
   constructor(
     private dataService: DataService,
+    private historyService: HistoryService,
     private stateService: StateService
   ) { }
 
@@ -158,6 +160,7 @@ export class PuzzleComponent implements OnInit {
     this.setGuessField('');
     this.renderImage(1);
     this.gameMode = 'won';
+    this.historyService.storeResult(this.gameMode, this.guesses.length);
   }
 
   private handleIncorrectAnswer(submission: string) {
@@ -166,6 +169,7 @@ export class PuzzleComponent implements OnInit {
     if (this.guesses.length == this.levels.length) {
       this.renderImage(1);
       this.gameMode = 'lost';
+      this.historyService.storeResult(this.gameMode, this.guesses.length);
     } else {
       this.level++;
       this.showCurrentLevelImage();
