@@ -106,13 +106,11 @@ export class PuzzleComponent implements OnInit {
 
   share(): void {
 
-    const textToShare = `
-    #PopIdle #${this.puzzleNumber}
+    const textToShare = `#PopIdle #${this.puzzleNumber}
 
-    ${this.getResultEmojiBoard()}
+${this.getResultEmojiBoard()}
 
-    https://popidle.the-sound.co.uk
-    `;
+https://popidle.the-sound.co.uk`;
 
     if (navigator.share) { 
       navigator.share({

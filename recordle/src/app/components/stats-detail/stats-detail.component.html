@@ -1,0 +1,30 @@
+<div *ngIf="statistics">
+    <div class="level">
+        <div class="level-item has-text-centered">
+            <div>
+                <p class="heading">Current Streak</p>
+                <p class="title">{{ statistics.currentStreak }}</p>
+            </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <div>
+                <p class="heading">Max Streak</p>
+                <p class="title">{{ statistics.maxStreak }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="level">
+        <div class="level-item has-text-centered">
+            <div>
+                <p class="heading">Wins</p>
+                <p class="title">{{ statistics.gamesPlayed }}/{{ statistics.gamesWon }}</p>
+            </div>
+        </div>
+        <div class="level-item has-text-centered">
+            <div>
+                <p class="heading">Win Percentage</p>
+                <p class="title">{{ statistics.winPercentage.toFixed(1) }}%</p>
+            </div>
+        </div>
+    </div>
+</div>

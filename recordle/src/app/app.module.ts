@@ -16,6 +16,7 @@ import { SpotifyWidgetComponent } from './components/spotify-widget/spotify-widg
 import { UriPipe } from './pipes/uri.pipe';
 import { StatsComponent } from './components/stats/stats.component';
 import { HowToComponent } from './components/how-to/how-to.component';
+import { StatsDetailComponent } from './components/stats-detail/stats-detail.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HowToComponent } from './components/how-to/how-to.component';
     SpotifyWidgetComponent,
     UriPipe,
     StatsComponent,
-    HowToComponent
+    HowToComponent,
+    StatsDetailComponent
   ],
   imports: [
     BrowserModule,
