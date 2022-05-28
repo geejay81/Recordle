@@ -52,6 +52,9 @@
                     <p>You knew that the answer was <b>{{ answer?.albumTitle }}</b> by <b>{{ answer?.artist }}</b>.</p>
                     <button type="button" (click)="share()" class="button is-inverse is-medium"><i class="fa-solid fa-share-nodes">&nbsp;</i> Share</button>
                 </div>
+                <div class="notification content">
+                    <app-stats-detail></app-stats-detail>
+                </div>
             </div>
             <div class="column" *ngIf="gameMode == 'lost'">
                 <app-spotify-widget *ngIf="answer?.embedKey != ''" [albumId]="answer?.embedKey || ''"></app-spotify-widget>
@@ -59,6 +62,9 @@
                     <h2 class="title">Better luck next time!</h2>
                     <p>The answer was <b>{{ answer?.albumTitle }}</b> by <b>{{ answer?.artist }}</b>.</p>
                     <button type="button" (click)="share()" class="button is-inverse is-medium"><i class="fa-regular fa-share-nodes">&nbsp;</i> Share</button>
+                </div>
+                <div class="notification content">
+                    <app-stats-detail></app-stats-detail>
                 </div>
             </div>
         </div>
