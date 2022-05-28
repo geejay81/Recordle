@@ -10,6 +10,12 @@
             <a class="navbar-item" href="https://www.instagram.com/popidlegame/">
                 <i class="fa-brands fa-instagram"></i>
             </a>
+            <a class="navbar-item" href="#" (click)="openHowToModal($event)">
+                <i class="fa-solid fa-circle-question"></i>
+            </a>
         </div>
     </div>
 </nav>
+
+<app-stats *ngIf="showStats" (closeStats)="closeStatsModal()"></app-stats>
+<app-how-to *ngIf="showHowTo" (closeStats)="closeHowToModal()"></app-how-to>
