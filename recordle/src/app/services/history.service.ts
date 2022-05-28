@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { History, IHistory } from '../models/history';
+import { History, IGuessHistory, IHistory } from '../models/history';
 
 @Injectable({
   providedIn: 'root'
@@ -51,6 +51,20 @@ export class HistoryService {
     } else {
       currentHistory.guesses.fail = currentHistory.guesses.fail + 1;
     }
+    currentHistory.averageGuesses = this.calculateAverageGuesses(currentHistory.guesses, currentHistory.gamesPlayed);
     localStorage.setItem(this.historyStorageKey, JSON.stringify(currentHistory));
+  }
+
+  private calculateAverageGuesses(guesses: IGuessHistory, gamesPlayed: number): number {
+    const totalGuesses = 
+      (guesses.one * 1) +
+      (guesses.two * 2) +
+      (guesses.three * 3) +
+      (guesses.four * 4) +
+      (guesses.five * 5) +
+      (guesses.six * 6) +
+      (guesses.fail * 6);
+
+    return Number((totalGuesses / gamesPlayed).toPrecision(3));
   }
 }
