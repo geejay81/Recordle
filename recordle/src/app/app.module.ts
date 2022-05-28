@@ -14,6 +14,8 @@ import { PuzzleComponent } from './components/puzzle/puzzle.component';
 import { PuzzleImageComponent } from './components/puzzle-image/puzzle-image.component';
 import { SpotifyWidgetComponent } from './components/spotify-widget/spotify-widget.component';
 import { UriPipe } from './pipes/uri.pipe';
+import { StatsComponent } from './components/stats/stats.component';
+import { HowToComponent } from './components/how-to/how-to.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { UriPipe } from './pipes/uri.pipe';
     PuzzleComponent,
     PuzzleImageComponent,
     SpotifyWidgetComponent,
-    UriPipe
+    UriPipe,
+    StatsComponent,
+    HowToComponent
   ],
   imports: [
     BrowserModule,

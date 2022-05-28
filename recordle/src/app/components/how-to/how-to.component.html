@@ -1,0 +1,24 @@
+<div class="modal is-active">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <h2 class="modal-card-title">How to play</h2>
+        <button class="delete" aria-label="close" (click)="closeClicked()"></button>
+      </header>
+      <section class="modal-card-body">
+          <div class="content">
+            <ul>
+                <li>Start typing to search for the album title that you think may be the answer</li>
+                <li>Submit your answer to see if you are correct</li>
+                <li>If you are incorrect you will see a slightly less pixelated version of the album cover</li>
+                <li>Try another answer to see if you are correct this time</li>
+                <li>Keep trying until you find the answer or you have used all 6 attemps</li>
+                <li>Don't forget to share to your friends when you find the answer!</li>
+            </ul>
+          </div>
+      </section>
+      <footer class="modal-card-foot">
+        <button class="button" (click)="closeClicked()">Close</button>
+      </footer>
+    </div>
+  </div>
