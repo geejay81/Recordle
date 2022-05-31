@@ -16,11 +16,14 @@ export class HistoryService {
     return new History();
   }
 
-  storeResult(result: string, guesses: number): void {
+  storeResult(result: string, guesses: number, puzzleNumber: number): void {
     let currentHistory = this.gethistory();
     currentHistory.gamesPlayed = currentHistory.gamesPlayed + 1;
     currentHistory.gamesWon = currentHistory.gamesWon + (result === 'won' ? 1: 0);
     currentHistory.winPercentage = (currentHistory.gamesWon / currentHistory.gamesPlayed) * 100.00;
+    if (currentHistory.previousGame !== 0 && currentHistory.previousGame !== (puzzleNumber - 1)) {
+      currentHistory.currentStreak = 0;
+    }
     currentHistory.currentStreak = result === 'won' 
       ? currentHistory.currentStreak + 1
       : 0;

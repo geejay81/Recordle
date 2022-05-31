@@ -158,7 +158,8 @@ https://popidle.the-sound.co.uk`;
     this.setGuessField('');
     this.renderImage(1);
     this.gameMode = 'won';
-    this.historyService.storeResult(this.gameMode, this.guesses.length);
+    this.historyService.storeResult(
+      this.gameMode, this.guesses.length, this.puzzleNumber!);
   }
 
   private handleIncorrectAnswer(submission: string) {
@@ -167,7 +168,8 @@ https://popidle.the-sound.co.uk`;
     if (this.guesses.length == this.levels.length) {
       this.renderImage(1);
       this.gameMode = 'lost';
-      this.historyService.storeResult(this.gameMode, this.guesses.length);
+      this.historyService.storeResult(
+        this.gameMode, this.guesses.length, this.puzzleNumber!);
     } else {
       this.level++;
       this.showCurrentLevelImage();
