@@ -9,6 +9,7 @@ export interface IGuessHistory {
 }
 
 export interface IHistory {
+    previousGame: number;
     currentStreak: number;
     maxStreak: number;
     guesses: IGuessHistory
@@ -29,6 +30,7 @@ export class GuessHistory implements IGuessHistory {
 }
 
 export class History implements IHistory {
+    previousGame: number = 0;
     currentStreak: number = 0;
     maxStreak: number = 0;
     guesses: IGuessHistory = new GuessHistory();

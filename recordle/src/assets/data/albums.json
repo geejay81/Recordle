@@ -19,11 +19,12 @@
   { "id": 8, "artist": "Dire Straits", "albumTitle": "Brothers in Arms" , "embedKey": "0u7sgzvlLmPLvujXxy9EeY"},
   { "id": 9, "artist": "Radiohead", "albumTitle": "OK Computer", "embedKey": "6dVIqQ8qmQ5GBnJ9shOYGE" },
   { "id": 10, "artist": "Madonna", "albumTitle": "Like a Prayer", "embedKey": "48AGkmM7iO4jrELRnNZGPV" },
-  { "id": 11, "artist": "Amy Winehouse", "albumTitle": "Back to Black", "embedKey": "097eYvf9NKjFnv4xA9s2oV" },{
+  { "id": 11, "artist": "Amy Winehouse", "albumTitle": "Back to Black", "embedKey": "097eYvf9NKjFnv4xA9s2oV" },
+  {
     "id": 12,
-    "artist": "Pink Floyd",
-    "albumTitle": "The Dark Side of the Moon",
-    "embedKey": "2WT1pbYjLJciAR26yMebkH"
+    "artist": "Beyoncé",
+    "albumTitle": "Dangerously in Love",
+    "embedKey": "6oxVabMIqCMJRYN1GqR3Vf"
   },
   { "id": 13, "artist": "The Beach Boys", "albumTitle": "Pet Sounds", "embedKey": "6GphKx2QAPRoVGWE9D7ou8" },
   { "id": 14, "artist": "Bob Dylan", "albumTitle": "Highway 61 Revisited", "embedKey": "6YabPKtZAjxwyWbuO9p4ZD" },
@@ -40,6 +41,12 @@
     "artist": "Bruce Springsteen",
     "albumTitle": "Born in the U.S.A.",
     "embedKey": "0PMasrHdpaoIRuHuhHp72O"
+  },
+  {
+    "id": 18,
+    "artist": "Pink Floyd",
+    "albumTitle": "The Dark Side of the Moon",
+    "embedKey": "2WT1pbYjLJciAR26yMebkH"
   },
   { "id": "", "artist": "The Beatles", "albumTitle": "Revolver" },
   { "id": "", "artist": "The Beatles", "albumTitle": "Rubber Soul" },

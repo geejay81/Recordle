@@ -19,7 +19,7 @@ export class PuzzleComponent implements OnInit {
 
   gameMode = 'play';
   levels = [40, 30, 20, 15, 10, 5];
-  level = 0;
+  // level = 0;
   puzzleData: IAlbum[] = [];
   puzzleNumber: number | undefined;
   answer: IAlbum | undefined;
@@ -76,7 +76,11 @@ export class PuzzleComponent implements OnInit {
     this.img1.width = 300;
     this.img1.height = 300;
     this.img1.onload = () => {
-      this.showCurrentLevelImage();
+      if (this.gameMode === 'play') {
+        this.showCurrentLevelImage();
+      } else {
+        this.renderImage(1);
+      }
     };
     this.img1.src = `../../../assets/images/albums/${this.puzzleNumber}.jpg`;
   }
@@ -158,7 +162,8 @@ https://popidle.the-sound.co.uk`;
     this.setGuessField('');
     this.renderImage(1);
     this.gameMode = 'won';
-    this.historyService.storeResult(this.gameMode, this.guesses.length);
+    this.historyService.storeResult(
+      this.gameMode, this.guesses.length, this.puzzleNumber!);
   }
 
   private handleIncorrectAnswer(submission: string) {
@@ -167,9 +172,9 @@ https://popidle.the-sound.co.uk`;
     if (this.guesses.length == this.levels.length) {
       this.renderImage(1);
       this.gameMode = 'lost';
-      this.historyService.storeResult(this.gameMode, this.guesses.length);
+      this.historyService.storeResult(
+        this.gameMode, this.guesses.length, this.puzzleNumber!);
     } else {
-      this.level++;
       this.showCurrentLevelImage();
     }
   }
@@ -190,7 +195,7 @@ https://popidle.the-sound.co.uk`;
   }
 
   private showCurrentLevelImage(): void {
-    this.renderImage(this.levels[this.level]);
+    this.renderImage(this.levels[this.guesses.length]);
   }
 
   private renderImage(pixelSize: number): void {
