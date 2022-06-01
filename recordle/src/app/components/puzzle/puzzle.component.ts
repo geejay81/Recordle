@@ -19,7 +19,6 @@ export class PuzzleComponent implements OnInit {
 
   gameMode = 'play';
   levels = [40, 30, 20, 15, 10, 5];
-  // level = 0;
   puzzleData: IAlbum[] = [];
   puzzleNumber: number | undefined;
   answer: IAlbum | undefined;
@@ -133,7 +132,7 @@ https://popidle.the-sound.co.uk`;
     };
   }
 
-  getResultEmojiBoard(): string {
+  private getResultEmojiBoard(): string {
     let result = '';
 
     for (let i = 0; i < this.guesses.length; i++) {
@@ -162,6 +161,10 @@ https://popidle.the-sound.co.uk`;
     this.setGuessField('');
     this.renderImage(1);
     this.gameMode = 'won';
+    this.saveResult();
+  }
+
+  private saveResult() {
     this.historyService.storeResult(
       this.gameMode, this.guesses.length, this.puzzleNumber!);
   }
@@ -172,8 +175,7 @@ https://popidle.the-sound.co.uk`;
     if (this.guesses.length == this.levels.length) {
       this.renderImage(1);
       this.gameMode = 'lost';
-      this.historyService.storeResult(
-        this.gameMode, this.guesses.length, this.puzzleNumber!);
+      this.saveResult();
     } else {
       this.showCurrentLevelImage();
     }
@@ -188,10 +190,13 @@ https://popidle.the-sound.co.uk`;
   }
 
   private getIdForTodaysPuzzle(): number {
+    const numberOfPuzzles = this.puzzleData.filter(d => d.id.toString().length > 0).length;
     const _MS_PER_DAY = 1000 * 60 * 60 * 24;
-    const startDate = new Date('2022-05-21');
+    const startDate = new Date('2022-05-22');
     const today = new Date();
-    return Math.floor((today.getTime() - startDate.getTime()) / _MS_PER_DAY) + 1;
+    const daysSinceStart = Math.floor((today.getTime() - startDate.getTime()) / _MS_PER_DAY) + 1;
+
+    return (daysSinceStart % numberOfPuzzles) + 1;
   }
 
   private showCurrentLevelImage(): void {
@@ -221,7 +226,8 @@ https://popidle.the-sound.co.uk`;
     
     let img2 = new Image();
     img2.src = this.c.toDataURL("image/jpeg");
-    img2.width = 300;
+    img2.width = window.innerWidth;
+    img2.height = window.innerWidth;
     
     document.getElementById("puzzle-image")?.remove();
     img2.id = "puzzle-image";
