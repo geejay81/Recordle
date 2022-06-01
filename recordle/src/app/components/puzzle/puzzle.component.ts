@@ -226,8 +226,9 @@ https://popidle.the-sound.co.uk`;
     
     let img2 = new Image();
     img2.src = this.c.toDataURL("image/jpeg");
-    img2.width = window.innerWidth;
-    img2.height = window.innerWidth;
+    const dimension = window.innerWidth < window.innerHeight ? window.innerWidth : window.innerHeight;
+    img2.width = dimension;
+    img2.height = dimension;
     
     document.getElementById("puzzle-image")?.remove();
     img2.id = "puzzle-image";
