@@ -27,9 +27,8 @@
             </div>
             <div class="column" *ngIf="gameMode == 'play'">
                 <div id="puzzle-controls">
-                    <h2 class="subtitle" id="puzzle-level-title"></h2>
                     <div class="field">
-                        <label class="label" for="guess">Answer</label>
+                        <label class="label" for="guess">Search album list</label>
                         <div class="control autocomplete">
                             <input type="text" id="guess"
                                 class="input is-outlined is-medium is-primary" 
@@ -40,6 +39,7 @@
                     <button type="button" class="button is-primary is-medium is-fullwidth" id="btnSubmit" (click)="submitGuess()">Submit</button>
                 </div>
                 <div class="content" *ngIf="guesses.length > 0">
+                    <h3 class="is-sr-only subtitle">Previous guesses</h3>
                     <ol id="previous-guesses">
                         <li *ngFor="let g of guesses"><i class="fa-regular fa-tick"></i> {{ g.answer }}</li>
                     </ol>
@@ -50,7 +50,7 @@
                 <div class="notification is-success content" role="alert">
                     <h2 class="title">Top of the Pops!</h2>
                     <p>You knew that the answer was <b>{{ answer?.albumTitle }}</b> by <b>{{ answer?.artist }}</b>.</p>
-                    <button type="button" (click)="share()" class="button is-inverse is-medium"><i class="fa-solid fa-share-nodes">&nbsp;</i> Share</button>
+                    <button type="button" (click)="share()" class="button is-inverse is-medium"><i class="fa-solid fa-share-nodes">&nbsp;</i> Share results</button>
                 </div>
                 <div class="notification content">
                     <app-stats-detail></app-stats-detail>
@@ -61,7 +61,7 @@
                 <div class="notification is-danger content" role="alert">
                     <h2 class="title">Better luck next time!</h2>
                     <p>The answer was <b>{{ answer?.albumTitle }}</b> by <b>{{ answer?.artist }}</b>.</p>
-                    <button type="button" (click)="share()" class="button is-inverse is-medium"><i class="fa-regular fa-share-nodes">&nbsp;</i> Share</button>
+                    <button type="button" (click)="share()" class="button is-inverse is-medium"><i class="fa-regular fa-share-nodes">&nbsp;</i> Share results</button>
                 </div>
                 <div class="notification content">
                     <app-stats-detail></app-stats-detail>
