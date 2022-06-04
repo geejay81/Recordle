@@ -52,7 +52,7 @@
                     <p>You knew that the answer was <b>{{ answer?.albumTitle }}</b> by <b>{{ answer?.artist }}</b>.</p>
                     <button type="button" (click)="share()" class="button is-inverse is-medium"><i class="fa-solid fa-share-nodes">&nbsp;</i> Share results</button>
                 </div>
-                <div class="notification content">
+                <div class="notification content" *ngIf="puzzleMode === 'daily'">
                     <app-stats-detail></app-stats-detail>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                     <p>The answer was <b>{{ answer?.albumTitle }}</b> by <b>{{ answer?.artist }}</b>.</p>
                     <button type="button" (click)="share()" class="button is-inverse is-medium"><i class="fa-regular fa-share-nodes">&nbsp;</i> Share results</button>
                 </div>
-                <div class="notification content">
+                <div class="notification content" *ngIf="puzzleMode === 'daily'">
                     <app-stats-detail></app-stats-detail>
                 </div>
             </div>
