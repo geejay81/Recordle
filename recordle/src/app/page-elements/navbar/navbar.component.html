@@ -4,13 +4,9 @@
             <a class="navbar-item" href="#">
                 <h1 id="puzzle-title"><i class="fa-solid fa-record-vinyl"></i> PopIdle</h1>
             </a>
-            <a class="navbar-item" href="https://twitter.com/popidlegame">
-                <i class="fa-brands fa-twitter"></i>
-                <span class="is-sr-only">Twitter</span>
-            </a>
-            <a class="navbar-item" href="https://www.instagram.com/popidlegame/">
-                <i class="fa-brands fa-instagram"></i>
-                <span class="is-sr-only">Instagram</span>
+            <a class="navbar-item" [routerLink]="['/']">
+                <i class="fa-solid fa-house"></i>
+                <span class="is-sr-only">Home</span>
             </a>
             <a class="navbar-item" href="#" (click)="openHowToModal($event)">
                 <i class="fa-solid fa-circle-question"></i>
@@ -19,6 +15,10 @@
             <a class="navbar-item" href="#" (click)="openStatsModal($event)">
                 <i class="fa-solid fa-chart-simple"></i>
                 <span class="is-sr-only">History</span>
+            </a>
+            <a class="navbar-item" [routerLink]="['/album-history']">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span class="is-sr-only">Previous puzzles</span>
             </a>
         </div>
     </div>
