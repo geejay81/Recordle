@@ -1,9 +1,13 @@
+import { PageNotFoundComponent } from './routes/page-not-found/page-not-found.component';
+import { PreviousGuessTheAlbumComponent } from './routes/previous-guess-the-album/previous-guess-the-album.component';
 import { GuessTheAlbumComponent } from './routes/guess-the-album/guess-the-album.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: 'guess-the-album', component: GuessTheAlbumComponent },
+  { path: 'guess-the-album/:id', component: PreviousGuessTheAlbumComponent },
+  { path: 'page-not-found', component: PageNotFoundComponent },
   { path: '', redirectTo: '/guess-the-album', pathMatch: 'full' }
 
 ];

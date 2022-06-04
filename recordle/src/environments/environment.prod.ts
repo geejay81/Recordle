@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  goLiveDate: '2022-05-22'
 };

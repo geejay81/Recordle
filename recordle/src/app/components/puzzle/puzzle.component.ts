@@ -16,6 +16,8 @@ import { Guess } from 'src/app/models/guess';
 export class PuzzleComponent implements OnInit {
   @ViewChildren(PuzzleImageComponent) puzzleImageComponent!: PuzzleImageComponent;
   @Input() title: string = '';
+  @Input() puzzleIndex: number = 0;
+  @Input() puzzleMode: string = 'daily';
 
   gameMode = 'play';
   levels = [40, 30, 20, 15, 10, 5];
@@ -113,7 +115,7 @@ export class PuzzleComponent implements OnInit {
 
 ${this.getResultEmojiBoard()}
 
-https://popidle.the-sound.co.uk`;
+${this.getPuzzleUrl()}`;
 
     if (navigator.share) { 
       navigator.share({
@@ -130,6 +132,11 @@ https://popidle.the-sound.co.uk`;
         alert("Result to clipboard");
       });
     };
+  }
+  getPuzzleUrl() {
+    return this.puzzleMode !== 'daily'
+        ? `https://popidle.the-sound.co.uk/guess-the-album/${this.puzzleIndex + 1}`
+        : 'https://popidle.the-sound.co.uk';
   }
 
   private getResultEmojiBoard(): string {
@@ -165,8 +172,10 @@ https://popidle.the-sound.co.uk`;
   }
 
   private saveResult() {
-    this.historyService.storeResult(
-      this.gameMode, this.guesses.length, this.puzzleNumber!);
+    if (this.puzzleMode === 'daily') {
+      this.historyService.storeResult(
+        this.gameMode, this.guesses.length, this.puzzleNumber!);
+    }
   }
 
   private handleIncorrectAnswer(submission: string) {
@@ -191,12 +200,7 @@ https://popidle.the-sound.co.uk`;
 
   private getIdForTodaysPuzzle(): number {
     const numberOfPuzzles = this.puzzleData.filter(d => d.id.toString().length > 0).length;
-    const _MS_PER_DAY = 1000 * 60 * 60 * 24;
-    const startDate = new Date('2022-05-22');
-    const today = new Date();
-    const daysSinceStart = Math.floor((today.getTime() - startDate.getTime()) / _MS_PER_DAY) + 1;
-
-    return (daysSinceStart % numberOfPuzzles) + 1;
+    return (this.puzzleIndex % numberOfPuzzles) + 1;
   }
 
   private showCurrentLevelImage(): void {
@@ -246,10 +250,12 @@ https://popidle.the-sound.co.uk`;
   }
 
   private saveState(): void {
-    this.stateService.setState(
-      this.puzzleNumber!,
-      this.guesses
-    );
+    if (this.puzzleMode === 'daily') {
+      this.stateService.setState(
+        this.puzzleNumber!,
+        this.guesses
+      );
+    }
   }
 }
 

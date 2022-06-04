@@ -17,6 +17,8 @@ import { UriPipe } from './pipes/uri.pipe';
 import { StatsComponent } from './components/stats/stats.component';
 import { HowToComponent } from './components/how-to/how-to.component';
 import { StatsDetailComponent } from './components/stats-detail/stats-detail.component';
+import { PreviousGuessTheAlbumComponent } from './routes/previous-guess-the-album/previous-guess-the-album.component';
+import { PageNotFoundComponent } from './routes/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { StatsDetailComponent } from './components/stats-detail/stats-detail.com
     UriPipe,
     StatsComponent,
     HowToComponent,
-    StatsDetailComponent
+    StatsDetailComponent,
+    PreviousGuessTheAlbumComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
