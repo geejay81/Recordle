@@ -1,3 +1,4 @@
+import { PuzzleService } from './../../services/puzzle.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GuessTheAlbumComponent implements OnInit {
 
-  constructor() { }
+  puzzleIndex: number = 0;
+  puzzleMode: string = 'daily';
+
+  constructor(
+    private puzzleService: PuzzleService
+  ) { }
 
   ngOnInit(): void {
+    this.puzzleIndex = this.puzzleService.calculatePuzzleIndex();
   }
-
 }

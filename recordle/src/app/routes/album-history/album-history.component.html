@@ -1,0 +1,11 @@
+<section class="section">
+    <div class="container">
+        <h2 class="title">Previous album puzzles</h2>
+        <div class="buttons">
+            <a 
+                class="button is-medium is-link"
+                *ngFor="let puzzle of previousPuzzles"
+                [routerLink]="['/guess-the-album', puzzle]">{{ puzzle }}</a>
+        </div>
+    </div>
+</section>
