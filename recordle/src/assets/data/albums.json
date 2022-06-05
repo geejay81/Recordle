@@ -48,6 +48,35 @@
     "albumTitle": "The Dark Side of the Moon",
     "embedKey": "2WT1pbYjLJciAR26yMebkH"
   },
+  {
+    "id": 19,
+    "artist": "Adele",
+    "albumTitle": "25",
+    "embedKey": "6TVfiWmo8KtflUAmkK9gGF"
+  },
+  {
+    "id": 20,
+    "artist": "Blur",
+    "albumTitle": "Parklife",
+    "embedKey": "0YS25Dr3hMtMFlVTfuvzl4"
+  },
+  {
+    "id": 21,
+    "artist": "Little Mix",
+    "albumTitle": "Get Weird",
+    "embedKey": "2FnfZiFMv7bmXAIATOJDHs"
+  },
+
+  { "id": 22, 
+    "artist": "Fleetwood Mac", 
+    "albumTitle": "Rumours",
+    "embedKey": "1bt6q2SruMsBtcerNVtpZB"
+  },
+  { "id": 23, 
+    "artist": "Marillion", 
+    "albumTitle": "Misplaced Childhood",
+    "embedKey": "3ExyKxlUkqD41I8tQumMDF"
+  },
   { "id": "", "artist": "The Beatles", "albumTitle": "Revolver" },
   { "id": "", "artist": "The Beatles", "albumTitle": "Rubber Soul" },
   { "id": "", "artist": "Marvin Gaye", "albumTitle": "What's Going On" },
@@ -91,7 +120,6 @@
     "artist": "James Brown",
     "albumTitle": "Live at the Apollo, 1962"
   },
-  { "id": "", "artist": "Fleetwood Mac", "albumTitle": "Rumours" },
   { "id": "", "artist": "U2", "albumTitle": "The Joshua Tree" },
   { "id": "", "artist": "The Who", "albumTitle": "Who's Next" },
   { "id": "", "artist": "Led Zeppelin", "albumTitle": "Led Zeppelin" },

@@ -20,6 +20,7 @@ import { StatsDetailComponent } from './components/stats-detail/stats-detail.com
 import { PreviousGuessTheAlbumComponent } from './routes/previous-guess-the-album/previous-guess-the-album.component';
 import { PageNotFoundComponent } from './routes/page-not-found/page-not-found.component';
 import { AlbumHistoryComponent } from './routes/album-history/album-history.component';
+import { PuzzleGuessLogComponent } from './components/puzzle-guess-log/puzzle-guess-log.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AlbumHistoryComponent } from './routes/album-history/album-history.comp
     StatsDetailComponent,
     PreviousGuessTheAlbumComponent,
     PageNotFoundComponent,
-    AlbumHistoryComponent
+    AlbumHistoryComponent,
+    PuzzleGuessLogComponent
   ],
   imports: [
     BrowserModule,
