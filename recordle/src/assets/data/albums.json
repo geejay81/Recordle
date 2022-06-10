@@ -77,6 +77,42 @@
     "albumTitle": "Misplaced Childhood",
     "embedKey": "3ExyKxlUkqD41I8tQumMDF"
   },
+  { 
+    "id": 24, 
+    "artist": "Michael Jackson", 
+    "albumTitle": "Thriller",
+    "embedKey": "2ANVost0y2y52ema1E9xAZ" 
+  },
+  { 
+    "id": 25, 
+    "artist": "Metallica", 
+    "albumTitle": "Master of Puppets",
+    "embedKey": "2Lq2qX3hYhiuPckC8Flj21" 
+  },
+  {
+    "id": 26,
+    "artist": "Arctic Monkeys",
+    "albumTitle": "Whatever People Say I Am, That's What I'm Not",
+    "embedKey": "50Zz8CkIhATKUlQMbHO3k1" 
+  },
+  {
+    "id": 27,
+    "artist": "Mike Oldfield",
+    "albumTitle": "Tubular Bells",
+    "embedKey": "0a3YQpBnRzJzNktOjb6Dum" 
+  },
+  { 
+    "id": 28, 
+    "artist": "Blondie", 
+    "albumTitle": "Parallel Lines" ,
+    "embedKey": "5wc12ZsmXNIlppTmNFZFLU" 
+  },
+  { 
+    "id": "", 
+    "artist": "Michael Jackson", 
+    "albumTitle": "Off the Wall",
+    "embedKey": ""
+  },
   { "id": "", "artist": "The Beatles", "albumTitle": "Revolver" },
   { "id": "", "artist": "The Beatles", "albumTitle": "Rubber Soul" },
   { "id": "", "artist": "Marvin Gaye", "albumTitle": "What's Going On" },
@@ -102,7 +138,6 @@
   { "id": "", "artist": "Bob Dylan", "albumTitle": "Blood on the Tracks" },
   { "id": "", "artist": "Bruce Springsteen", "albumTitle": "Born to Run" },
   { "id": "", "artist": "Van Morrison", "albumTitle": "Astral Weeks" },
-  { "id": "", "artist": "Michael Jackson", "albumTitle": "Thriller" },
   { "id": "", "artist": "Chuck Berry", "albumTitle": "The Great Twenty_Eight" },
   {
     "id": "",
@@ -353,7 +388,6 @@
   { "id": "", "artist": "The Replacements", "albumTitle": "Tim" },
   { "id": "", "artist": "Dr. Dre", "albumTitle": "The Chronic" },
   { "id": "", "artist": "The Meters", "albumTitle": "Rejuvenation" },
-  { "id": "", "artist": "Blondie", "albumTitle": "Parallel Lines" },
   { "id": "", "artist": "B.B. King", "albumTitle": "Live at the Regal" },
   {
     "id": "",
@@ -419,7 +453,6 @@
     "artist": "Elvis Costello & The Attractions",
     "albumTitle": "Imperial Bedroom"
   },
-  { "id": "", "artist": "Metallica", "albumTitle": "Master of Puppets" },
   { "id": "", "artist": "Elvis Costello", "albumTitle": "My Aim Is True" },
   { "id": "", "artist": "Bob Marley & The Wailers", "albumTitle": "Exodus" },
   { "id": "", "artist": "The Who", "albumTitle": "Live at Leeds" },
@@ -858,11 +891,6 @@
   { "id": "", "artist": "Eagles", "albumTitle": "Eagles" },
   { "id": "", "artist": "The Smiths", "albumTitle": "Louder Than Bombs" },
   { "id": "", "artist": "Mott the Hoople", "albumTitle": "Mott" },
-  {
-    "id": "",
-    "artist": "Arctic Monkeys",
-    "albumTitle": "Whatever People Say I Am, That's What I'm Not"
-  },
   { "id": "", "artist": "The Police", "albumTitle": "Reggatta de Blanc" },
   { "id": "", "artist": "Jefferson Airplane", "albumTitle": "Volunteers" },
   { "id": "", "artist": "Roxy Music", "albumTitle": "Siren" },

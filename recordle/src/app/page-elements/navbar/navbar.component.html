@@ -1,22 +1,22 @@
-<nav class="navbar is-light is-primary" role="navigation" aria-label="main navigation">
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item" href="#">
                 <h1 id="puzzle-title"><i class="fa-solid fa-record-vinyl"></i> PopIdle</h1>
             </a>
-            <a class="navbar-item" [routerLink]="['/']">
+            <a class="navbar-item" [routerLink]="['/']" title="Home">
                 <i class="fa-solid fa-house"></i>
                 <span class="is-sr-only">Home</span>
             </a>
-            <a class="navbar-item" href="#" (click)="openHowToModal($event)">
+            <a class="navbar-item" href="#" (click)="openHowToModal($event)" title="How to play">
                 <i class="fa-solid fa-circle-question"></i>
                 <span class="is-sr-only">How to play</span>
             </a>
-            <a class="navbar-item" href="#" (click)="openStatsModal($event)">
+            <a class="navbar-item" href="#" (click)="openStatsModal($event)" title="History">
                 <i class="fa-solid fa-chart-simple"></i>
                 <span class="is-sr-only">History</span>
             </a>
-            <a class="navbar-item" [routerLink]="['/album-history']">
+            <a class="navbar-item" [routerLink]="['/album-history']" title="Previous puzzles">
                 <i class="fa-solid fa-calendar-days"></i>
                 <span class="is-sr-only">Previous puzzles</span>
             </a>
