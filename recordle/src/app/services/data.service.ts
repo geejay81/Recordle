@@ -13,6 +13,6 @@ export class DataService {
   ) { }
 
   getAlbumSourceData(): Observable<IAlbum[]> {
-    return this.http.get<IAlbum[]>('/assets/data/albums.json?v31-5-22');
+    return this.http.get<IAlbum[]>('/assets/data/albums.json?v17-6-22');
   }
 }
