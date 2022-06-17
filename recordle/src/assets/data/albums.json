@@ -108,6 +108,54 @@
     "embedKey": "5wc12ZsmXNIlppTmNFZFLU" 
   },
   { 
+    "id": 29, 
+    "artist": "Alanis Morissette", 
+    "albumTitle": "Jagged Little Pill" ,
+    "embedKey": "5Ap3F8CxjjsQKZGASDcHNA" 
+  },
+  { 
+    "id": 30, 
+    "artist": "Britney Spears", 
+    "albumTitle": "...Baby One More Time" ,
+    "embedKey": "3WNxdumkSMGMJRhEgK80qx" 
+  },
+  { 
+    "id": 31, 
+    "artist": "The Beatles", 
+    "albumTitle": "Abbey Road" ,
+    "embedKey": "0ETFjACtuP2ADo6LFhL6HN" 
+  },
+  { 
+    "id": 32, 
+    "artist": "Joy Division", 
+    "albumTitle": "Unknown Pleasures" ,
+    "embedKey": "5Dgqy4bBg09Rdw7CQM545s" 
+  },
+  { 
+    "id": 33, 
+    "artist": "Rhianna", 
+    "albumTitle": "Loud" ,
+    "embedKey": "7vN82vd1Vq44fjlhjfvHJp" 
+  },
+  { 
+    "id": 34, 
+    "artist": "Queen", 
+    "albumTitle": "News of the World" ,
+    "embedKey": "5EAEpt26lzvDKNDFQD94b6" 
+  },
+  { 
+    "id": 35, 
+    "artist": "Sex Pistols", 
+    "albumTitle": "Never Mind The Bollocks, Here's The Sex Pistols" ,
+    "embedKey": "17lv1Ruxq46ZK5xAINAX8J" 
+  },
+  { 
+    "id": 36, 
+    "artist": "The Rolling Stones", 
+    "albumTitle": "Tattoo You" ,
+    "embedKey": "15XNBzVWARPMlu0sEbfBjJ" 
+  },
+  { 
     "id": "", 
     "artist": "Michael Jackson", 
     "albumTitle": "Off the Wall",
@@ -129,7 +177,6 @@
   },
   { "id": "", "artist": "Elvis Presley", "albumTitle": "The Sun Sessions" },
   { "id": "", "artist": "Miles Davis", "albumTitle": "Kind of Blue" },
-  { "id": "", "artist": "The Beatles", "albumTitle": "Abbey Road" },
   {
     "id": "",
     "artist": "The Jimi Hendrix Experience",
@@ -176,11 +223,6 @@
   { "id": "", "artist": "Muddy Waters", "albumTitle": "The Anthology" },
   { "id": "", "artist": "The Beatles", "albumTitle": "Please Please Me" },
   { "id": "", "artist": "Love", "albumTitle": "Forever Changes" },
-  {
-    "id": "",
-    "artist": "Sex Pistols",
-    "albumTitle": "Never Mind the Bollocks Here's the Sex Pistols"
-  },
   { "id": "", "artist": "The Doors", "albumTitle": "The Doors" },
   { "id": "", "artist": "Patti Smith", "albumTitle": "Horses" },
   {
@@ -562,7 +604,6 @@
   },
   { "id": "", "artist": "Pink Floyd", "albumTitle": "Wish You Were Here" },
   { "id": "", "artist": "Pavement", "albumTitle": "Crooked Rain Crooked Rain" },
-  { "id": "", "artist": "The Rolling Stones", "albumTitle": "Tattoo You" },
   {
     "id": "",
     "artist": "Ike & Tina Turner",
