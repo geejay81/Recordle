@@ -24,7 +24,7 @@
                                 name="guess" />
                         </div>
                     </div>
-                    <button type="button" class="button is-primary is-medium is-fullwidth" id="btnSubmit" (click)="submitGuess()">Submit</button>
+                    <button type="button" class="button is-primary is-medium is-fullwidth" id="btnSubmit" (click)="submitGuess()">Guess</button>
                     <app-puzzle-guess-log [guesses]="guesses"></app-puzzle-guess-log>
                 </div>
                 <div class="content" *ngIf="guesses.length > 0">
