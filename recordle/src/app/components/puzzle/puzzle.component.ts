@@ -3,7 +3,7 @@ import { StateService } from './../../services/state.service';
 import { PuzzleImageComponent } from './../puzzle-image/puzzle-image.component';
 import { DataService } from './../../services/data.service';
 import { IAlbum } from './../../models/IAlbum';
-import { Component, Input, OnInit, ViewChildren } from '@angular/core';
+import { Component, Input, OnInit, ViewChildren, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { autocomplete } from 'src/assets/scripts/autocomplete';
 import { Guess } from 'src/app/models/guess';
@@ -13,7 +13,7 @@ import { Guess } from 'src/app/models/guess';
   templateUrl: './puzzle.component.html',
   styleUrls: ['./puzzle.component.sass']
 })
-export class PuzzleComponent implements OnInit {
+export class PuzzleComponent implements OnInit, OnDestroy {
   @ViewChildren(PuzzleImageComponent) puzzleImageComponent!: PuzzleImageComponent;
   @Input() title: string = '';
   @Input() puzzleIndex: number = 0;
@@ -40,11 +40,15 @@ export class PuzzleComponent implements OnInit {
     private stateService: StateService
   ) { }
 
+  ngOnDestroy(): void {
+    this.subscriptions.forEach(subscription => subscription.unsubscribe());
+  }
+
   ngOnInit(): void {
     this.subscriptions.push(
-      this.dataService.getAlbumSourceData().subscribe({
+      this.dataService.getAlbumApiData().subscribe({
         next: response => {
-          this.puzzleData = response;
+          this.puzzleData = response.result;
           this.initialisePuzzle();
           this.initialiseAutocomplete();
         },
@@ -73,7 +77,7 @@ export class PuzzleComponent implements OnInit {
         this.gameMode = 'lost';
       }
     };
-    this.answer = this.puzzleData.filter(m => m.id.toString() === this.puzzleNumber?.toString())[0];
+    this.answer = this.puzzleData.filter(m => m.id != null && m.id?.toString() === this.puzzleNumber?.toString())[0];
     this.img1.width = 300;
     this.img1.height = 300;
     this.img1.onload = () => {
@@ -83,7 +87,9 @@ export class PuzzleComponent implements OnInit {
         this.renderImage(1);
       }
     };
-    this.img1.src = `../../../assets/images/albums/${this.puzzleNumber}.jpg`;
+    
+    this.img1.setAttribute('crossOrigin', '');
+    this.img1.src = this.answer!.coverArt;
   }
 
   submitGuess(): void {
@@ -94,20 +100,6 @@ export class PuzzleComponent implements OnInit {
       this.handleIncorrectAnswer(submission);
     }
   }
-
-  // getBoxWrapperClass(box: number): string {
-  //   if (box > this.guesses.length) return 'icon has-text-light';
-  //   if (this.guesses[box - 1]?.result == 'correct') return 'icon has-text-success';
-  //   if (this.guesses[box - 1]?.result == 'incorrect') return 'icon has-text-danger';
-  //   return 'icon has-text-light';
-  // }
-
-  // getBoxIconClass(box: number): string {
-  //   if (box > this.guesses.length) return 'fa-solid fa-square';
-  //   if (this.guesses[box - 1]?.result == 'correct') return 'fa-solid fa-square-check';
-  //   if (this.guesses[box - 1]?.result == 'incorrect') return 'fa-solid fa-square-xmark';
-  //   return 'fa-solid fa-square';
-  // }
 
   share(): void {
 
@@ -199,7 +191,7 @@ ${this.getPuzzleUrl()}`;
   }
 
   private getIdForTodaysPuzzle(): number {
-    const numberOfPuzzles = this.puzzleData.filter(d => d.id.toString().length > 0).length;
+    const numberOfPuzzles = this.puzzleData.filter(d => d.id != null).length;
     return (this.puzzleIndex % numberOfPuzzles) + 1;
   }
 
