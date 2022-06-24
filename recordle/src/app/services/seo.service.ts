@@ -33,7 +33,9 @@ export class SeoService {
   ) {
     this.meta.updateTag({ property: 'description', content: descriptionValue });
     this.meta.updateTag({ property: 'og:description', content: descriptionValue });
+    this.meta.updateTag({ property: 'og:type', content: 'website' });
     this.meta.updateTag({ property: 'og:image', content: `${environment.baseUrl}assets/images/banners/PopIdle.jpg` });
+    this.meta.updateTag({ property: 'og:image:alt', content: 'PopIdle - Guess the album' });
     this.meta.updateTag({ property: 'og:image:width', content: '1200' });
     this.meta.updateTag({ property: 'og:image:height', content: '630' });
   }
