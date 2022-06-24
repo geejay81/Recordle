@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  goLiveDate: '2022-05-22'
+  goLiveDate: '2022-05-22',
+  baseUrl: 'http://localhost:4200/'
 };
 
 /*
