@@ -31,7 +31,7 @@ export class SeoService {
   private setMetaData(
     descriptionValue: string
   ) {
-    this.meta.updateTag({ property: 'description', content: descriptionValue });
+    this.meta.updateTag({ name: 'description', content: descriptionValue });
     this.meta.updateTag({ property: 'og:description', content: descriptionValue });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
     this.meta.updateTag({ property: 'og:image', content: `${environment.baseUrl}assets/images/banners/PopIdle.jpg` });
