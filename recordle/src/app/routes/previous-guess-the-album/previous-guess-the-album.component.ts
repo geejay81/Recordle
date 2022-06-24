@@ -2,6 +2,8 @@ import { PuzzleService } from './../../services/puzzle.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
+import { Meta } from '@angular/platform-browser';
+import { SeoService } from 'src/app/services/seo.service';
 
 @Component({
   selector: 'app-previous-guess-the-album',
@@ -16,11 +18,11 @@ export class PreviousGuessTheAlbumComponent implements OnInit, OnDestroy {
   constructor(
     private puzzleService: PuzzleService,
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private seoService: SeoService
   ) { }
 
   ngOnDestroy(): void {
-
     this.parameterSubscription$.unsubscribe();
   }
 
@@ -37,8 +39,10 @@ export class PreviousGuessTheAlbumComponent implements OnInit, OnDestroy {
 
         this.puzzleIndex = (+params['id']) - 1;
 
-        if (this.puzzleIndex > this.puzzleService.calculatePuzzleIndex()) {
+        this.seoService.configureSeo(
+          `PopIdle - Guess the album puzzle #${this.puzzleIndex + 1}`, "Can you guess the album from the pixelated images of the cover art?");
 
+        if (this.puzzleIndex > this.puzzleService.calculatePuzzleIndex()) {
           throw 'Puzzle does not exist.';
         };
 
