@@ -48,13 +48,13 @@ export class SeoService {
   }
 
   private setCanonicalLinkUrl() {
-    let link: HTMLLinkElement = this.doc.querySelector("link[rel='canonical']");
-    if (link === null) {
-      link = this.doc.createElement('link');
-      this.doc.head.appendChild(link);
-    };
-    link.setAttribute('rel', 'canonical');
-    link.setAttribute('href', this.doc.URL);
+    // let link: HTMLLinkElement = this.doc.querySelector("link[rel='canonical']");
+    // if (link === null) {
+    //   link = this.doc.createElement('link');
+    //   this.doc.head.appendChild(link);
+    // };
+    // link.setAttribute('rel', 'canonical');
+    // link.setAttribute('href', this.doc.URL);
     this.meta.updateTag({ property: 'og:url', content: this.doc.URL });
     this.meta.updateTag({ name: 'twitter:url', content: this.doc.URL });
  }

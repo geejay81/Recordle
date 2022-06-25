@@ -41,7 +41,7 @@ import { PuzzleGuessLogComponent } from './components/puzzle-guess-log/puzzle-gu
     PuzzleGuessLogComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     FontAwesomeModule,
     FormsModule,
