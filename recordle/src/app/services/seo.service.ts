@@ -39,8 +39,10 @@ export class SeoService {
     this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
     this.meta.updateTag({ property: 'og:description', content: descriptionValue });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
-    this.meta.updateTag({ property: 'og:image', content: `${environment.baseUrl}assets/images/banners/PopIdle.jpg` });
+    this.meta.updateTag({ property: 'og:image', content: `${environment.baseUrl}assets/images/banners/PopIdle.png` });
+    this.meta.updateTag({ name: 'twitter:image', content: `${environment.baseUrl}assets/images/banners/PopIdle.png` });
     this.meta.updateTag({ property: 'og:image:alt', content: 'PopIdle - Guess the album' });
+    this.meta.updateTag({ name: 'twitter:image:alt', content: 'PopIdle - Guess the album' });
     this.meta.updateTag({ property: 'og:image:width', content: '1200' });
     this.meta.updateTag({ property: 'og:image:height', content: '630' });
   }
@@ -54,5 +56,6 @@ export class SeoService {
     link.setAttribute('rel', 'canonical');
     link.setAttribute('href', this.doc.URL);
     this.meta.updateTag({ property: 'og:url', content: this.doc.URL });
+    this.meta.updateTag({ name: 'twitter:url', content: this.doc.URL });
  }
 }
