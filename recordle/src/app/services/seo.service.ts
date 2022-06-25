@@ -26,12 +26,17 @@ export class SeoService {
   private setPageTitle(titleValue: string) {
     this.title.setTitle(titleValue);
     this.meta.updateTag({ property: 'og:title', content: titleValue });
+    this.meta.updateTag({ name: 'twitter:title', content: titleValue });
+    this.meta.updateTag({ itemprop: 'name', content: titleValue });
   }
 
   private setMetaData(
     descriptionValue: string
   ) {
+    this.meta.updateTag({ itemprop: 'description', content: descriptionValue });
     this.meta.updateTag({ name: 'description', content: descriptionValue });
+    this.meta.updateTag({ name: 'twitter:description', content: descriptionValue });
+    this.meta.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
     this.meta.updateTag({ property: 'og:description', content: descriptionValue });
     this.meta.updateTag({ property: 'og:type', content: 'website' });
     this.meta.updateTag({ property: 'og:image', content: `${environment.baseUrl}assets/images/banners/PopIdle.jpg` });
