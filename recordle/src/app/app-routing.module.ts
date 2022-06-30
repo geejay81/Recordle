@@ -6,12 +6,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  { path: '', component: GuessTheAlbumComponent },
   { path: 'album-history', component: AlbumHistoryComponent },
-  { path: 'guess-the-album', component: GuessTheAlbumComponent },
   { path: 'guess-the-album/:id', component: PreviousGuessTheAlbumComponent },
   { path: 'page-not-found', component: PageNotFoundComponent },
-  { path: '', redirectTo: '/guess-the-album', pathMatch: 'full' }
-
+  { path: '/guess-the-album', redirectTo: '/', pathMatch: 'full' }
 ];
 
 @NgModule({
