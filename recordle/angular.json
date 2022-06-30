@@ -49,7 +49,7 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "sass",
             "assets": [
-              "src/_redirects",
+              "_redirects",
               "src/favicon.ico",
               "src/assets",
               "src/robots.txt"
