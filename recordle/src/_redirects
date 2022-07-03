@@ -1,1 +1,4 @@
-/* /index.html 200
+/guess-the-album /index.html 200
+/guess-the-album/* /index.html 200
+/album-history /index.html 200
+/page-not-found /index.html 200
