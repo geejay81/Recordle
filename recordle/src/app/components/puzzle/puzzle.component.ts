@@ -20,7 +20,7 @@ export class PuzzleComponent implements OnInit, OnDestroy {
   @Input() puzzleMode: string = 'daily';
 
   gameMode = 'play';
-  levels = [40, 30, 20, 15, 10, 5];
+  levels = [40, 25, 15, 10, 5, 2];
   puzzleData: IAlbum[] = [];
   puzzleNumber: number | undefined;
   answer: IAlbum | undefined;
@@ -103,7 +103,7 @@ export class PuzzleComponent implements OnInit, OnDestroy {
 
   share(): void {
 
-    const textToShare = `#PopIdle #${this.puzzleNumber}
+    const textToShare = `#PopIdle #${this.puzzleNumber} #PopIdle${this.puzzleNumber}
 
 ${this.getResultEmojiBoard()}
 
@@ -111,8 +111,9 @@ ${this.getPuzzleUrl()}`;
 
     if (navigator.share) { 
       navigator.share({
-         title: `PopIdle #${this.puzzleNumber}`,
-         text: textToShare
+        files: this.generateImageAsShareableFile(),
+        title: `PopIdle #${this.puzzleNumber}`,
+        text: textToShare
       })
       .then(() => {
         console.log('Thanks for sharing!');
@@ -199,8 +200,7 @@ ${this.getPuzzleUrl()}`;
     this.renderImage(this.levels[this.guesses.length]);
   }
 
-  private renderImage(pixelSize: number): void {
-
+  private generateImage(pixelSize: number): HTMLImageElement {
     const w = this.img1.width;
     const h = this.img1.height;
     
@@ -225,12 +225,38 @@ ${this.getPuzzleUrl()}`;
     const dimension = window.innerWidth < window.innerHeight ? window.innerWidth : window.innerHeight;
     img2.width = dimension;
     img2.height = dimension;
+    img2.id = "puzzle-image";
+
+    return img2;
+  }
+
+  private generateImageAsShareableFile(): File[] {
+    const result: File[] = [];
+    const img = this.generateImage(this.levels[0]);
+    fetch(img.src)
+      .then(response => response.blob())
+      .then(blob => {
+        result.push(
+          new File(
+            [blob],
+            'popidle.png',
+            {
+              type: blob.type,
+              lastModified: new Date().getTime()
+            }
+          ));
+      });
+    return result;
+  }
+
+  private renderImage(pixelSize: number): void {
+
+    const img = this.generateImage(pixelSize);
     
     document.getElementById("puzzle-image")?.remove();
-    img2.id = "puzzle-image";
-    document.getElementById("puzzle-box")?.appendChild(img2);
-    img2.tabIndex = -1;
-    img2.focus();
+    document.getElementById("puzzle-box")?.appendChild(img);
+    img.tabIndex = -1;
+    img.focus();
   }
 
   private setGuessField(textToFill: string): void {
