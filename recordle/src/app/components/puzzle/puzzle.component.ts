@@ -103,7 +103,7 @@ export class PuzzleComponent implements OnInit, OnDestroy {
 
   share(): void {
 
-    const textToShare = `#PopIdle #${this.puzzleNumber}
+    const textToShare = `#PopIdle #${this.puzzleNumber} #PopIdle${this.puzzleNumber}
 
 ${this.getResultEmojiBoard()}
 
