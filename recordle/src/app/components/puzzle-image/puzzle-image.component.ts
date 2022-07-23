@@ -18,11 +18,6 @@ export class PuzzleImageComponent implements OnInit {
   renderImage(puzzleNumber: number, level: number) {
     this.level = level;
     this.puzzleNumber = puzzleNumber;
-    console.log(puzzleNumber);
-  }
-
-  test() {
-    console.log('Hello from the image file.');
   }
 
 }
