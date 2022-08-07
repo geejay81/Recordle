@@ -21,7 +21,10 @@ export class HistoryService {
     currentHistory.gamesPlayed = currentHistory.gamesPlayed + 1;
     currentHistory.gamesWon = currentHistory.gamesWon + (result === 'won' ? 1: 0);
     currentHistory.winPercentage = (currentHistory.gamesWon / currentHistory.gamesPlayed) * 100.00;
-    if (currentHistory.previousGame !== 0 && currentHistory.previousGame !== (puzzleNumber - 1)) {
+    if (
+      currentHistory.previousGame !== 0 && 
+      currentHistory.previousGame !== (puzzleNumber - 1) &&
+      currentHistory.previousGame !== 1) { // TODO: remove this after 2022-08-09
       currentHistory.currentStreak = 0;
     }
     currentHistory.currentStreak = result === 'won' 
@@ -55,6 +58,7 @@ export class HistoryService {
       currentHistory.guesses.fail = currentHistory.guesses.fail + 1;
     }
     currentHistory.averageGuesses = this.calculateAverageGuesses(currentHistory.guesses, currentHistory.gamesPlayed);
+    currentHistory.previousGame = puzzleNumber;
     localStorage.setItem(this.historyStorageKey, JSON.stringify(currentHistory));
   }
 
