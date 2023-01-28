@@ -21,6 +21,7 @@ import { PreviousGuessTheAlbumComponent } from './routes/previous-guess-the-albu
 import { PageNotFoundComponent } from './routes/page-not-found/page-not-found.component';
 import { AlbumHistoryComponent } from './routes/album-history/album-history.component';
 import { PuzzleGuessLogComponent } from './components/puzzle-guess-log/puzzle-guess-log.component';
+import { FriendsComponent } from './components/friends/friends.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { PuzzleGuessLogComponent } from './components/puzzle-guess-log/puzzle-gu
     PreviousGuessTheAlbumComponent,
     PageNotFoundComponent,
     AlbumHistoryComponent,
-    PuzzleGuessLogComponent
+    PuzzleGuessLogComponent,
+    FriendsComponent
   ],
   imports: [
     BrowserModule,
