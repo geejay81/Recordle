@@ -56,14 +56,7 @@
               "src/robots.txt"
             ],
             "styles": [
-              {
-                "input": "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-                "bundleName": "fontawesome"
-              },
-              {
-                "input": "src/styles.sass",
-                "bundleName": "styles"
-              }
+              "src/styles.sass"
             ],
             "scripts": [
               "./src/assets/scripts/autocomplete.js"
