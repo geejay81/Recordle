@@ -1,2 +1,2 @@
 /*
-    Content-Security-Policy: default-src 'self'; frame-src 'self' open.spotify.com; connect-src 'self' v6qz2c5y.api.sanity.io;
+    Content-Security-Policy: default-src 'self'; frame-src 'self' open.spotify.com; connect-src 'self' v6qz2c5y.api.sanity.io; style-src 'self' 'unsafe-inline';
