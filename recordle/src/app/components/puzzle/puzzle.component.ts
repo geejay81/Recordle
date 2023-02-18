@@ -20,7 +20,7 @@ export class PuzzleComponent implements OnInit, OnDestroy {
   @Input() puzzleMode: string = 'daily';
 
   gameMode = 'play';
-  levels = [40, 25, 15, 10, 6, 3];
+  levels = [40, 24, 16, 8, 4, 2];
   puzzleData: IAlbum[] = [];
   puzzleNumber: number | undefined;
   answer: IAlbum | undefined;
