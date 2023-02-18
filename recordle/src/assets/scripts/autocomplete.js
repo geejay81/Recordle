@@ -40,7 +40,7 @@ const autocomplete = (inp, arr) => {
             a.appendChild(b);
           }
 
-          if (a.childElementCount == 5) break;
+          if (a.childElementCount == 8) break;
         }
     });
     /*execute a function presses a key on the keyboard:*/
