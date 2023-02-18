@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs';
-import { IAlbum, IApiResponse } from './../models/IAlbum';
+import { IApiResponse } from './../models/IAlbum';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
