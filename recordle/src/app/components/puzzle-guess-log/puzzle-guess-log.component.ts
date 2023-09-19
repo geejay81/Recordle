@@ -25,6 +25,6 @@ export class PuzzleGuessLogComponent implements OnInit {
     if (box > this.guesses.length) return 'fa-solid fa-lg fa-square';
     if (this.guesses[box - 1]?.result == 'correct') return 'fa-solid fa-lg fa-square-check';
     if (this.guesses[box - 1]?.result == 'incorrect') return 'fa-solid fa-lg fa-square-xmark';
-    return 'fa-solid fa-square';
+    return 'fa-solid fa-square is-size-4';
   }
 }

@@ -55,8 +55,8 @@
                 <app-friends></app-friends>
             </div>
             <div class="column" *ngIf="gameMode != 'play'">
-                <div class="notification content" *ngIf="puzzleMode === 'daily'">
-                    <h3>Daily puzzle history</h3>
+                <div class="notification content is-info is-bold" *ngIf="puzzleMode === 'daily'">
+                    <h3 class="title">Daily puzzle history</h3>
                     <app-stats-detail></app-stats-detail>
                 </div>
             </div>
