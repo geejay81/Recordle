@@ -5,6 +5,8 @@
 @import './bulma-overrides.sass'
 @import '../node_modules/bulma/bulma.sass'
 @import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
+@import '../node_modules/animate.css/animate.min.css'
+
 *
   box-sizing: border-box
 
@@ -30,12 +32,18 @@ input
   font-size: 16px
 
 input[type="text"]
-  background-color: #f1f1f1
   width: 100%
+  border: 1px solid #000 !important
+  &:focus
+    outline: none !important
+    box-shadow: 0 0 0 3px #000 !important
 
-input[type="submit"]
-  background-color: DodgerBlue
-  color: #fff
+button
+  border: 0px !important
+  margin-bottom: 5px
+  &:focus
+    outline: none !important
+    box-shadow: 0 0 0 3px #000 !important
 
 .autocomplete-items
   position: absolute
@@ -61,7 +69,7 @@ input[type="submit"]
   color: #ffffff
 
 img
-  border: 1px solid #eee
+  border: 1px solid #000
 
 ol li
   width: 100%

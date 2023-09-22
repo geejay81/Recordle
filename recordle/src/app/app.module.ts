@@ -22,6 +22,7 @@ import { PageNotFoundComponent } from './routes/page-not-found/page-not-found.co
 import { AlbumHistoryComponent } from './routes/album-history/album-history.component';
 import { PuzzleGuessLogComponent } from './components/puzzle-guess-log/puzzle-guess-log.component';
 import { FriendsComponent } from './components/friends/friends.component';
+import { HeroHeaderComponent } from './page-elements/hero-header/hero-header.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { FriendsComponent } from './components/friends/friends.component';
     PageNotFoundComponent,
     AlbumHistoryComponent,
     PuzzleGuessLogComponent,
-    FriendsComponent
+    FriendsComponent,
+    HeroHeaderComponent
   ],
   imports: [
     BrowserModule,
