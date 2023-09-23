@@ -32,6 +32,7 @@ export class PuzzleComponent implements OnInit, OnDestroy {
   guesses: Guess[] = [];
   correctBox = '🟩';
   incorrectBox = '🟥';
+  nearlyBox = '🟨'
   skippedBox = '⬜';
   
   constructor(
@@ -94,11 +95,30 @@ export class PuzzleComponent implements OnInit, OnDestroy {
 
   submitGuess(): void {
     const submission = this.getGuessField();
-    if (submission.toLowerCase().trim() == (`${this.answer?.artist} - ${this.answer?.albumTitle}`).toLowerCase()) {
+    const result = this.handleGuess(submission);
+    if (result === 'correct') {
       this.handleCorrectAnswer(submission);
     } else {
-      this.handleIncorrectAnswer(submission);
+      this.handleIncorrectAnswer(submission, result);
     }
+  }
+  private handleGuess(submission: string): string {
+    const submissionArray = submission.toLowerCase().trim().split(' - ');
+
+    if (submissionArray !== null && submissionArray.length === 2) {
+      const artist = submissionArray[0].trim();
+      const album = submissionArray[1].trim();
+
+      if (artist !== `${this.answer?.artist}`.toLowerCase())
+        return 'incorrect';
+
+      if (album !== `${this.answer?.albumTitle}`.toLowerCase())
+        return 'nearly';
+
+      return 'correct';
+    }
+    
+    return 'incorrect';
   }
 
   share(): void {
@@ -143,6 +163,9 @@ ${this.getPuzzleUrl()}`;
         case 'incorrect':
           result += this.incorrectBox;
           break;
+        case 'nearly':
+          result += this.nearlyBox;
+          break;
         default:
           result += this.skippedBox;
           break;
@@ -171,8 +194,8 @@ ${this.getPuzzleUrl()}`;
     }
   }
 
-  private handleIncorrectAnswer(submission: string) {
-    this.logGuess("incorrect", submission);
+  private handleIncorrectAnswer(submission: string, guessResult: string = 'incorrect') {
+    this.logGuess(guessResult, submission);
     this.setGuessField('');
     if (this.guesses.length == this.levels.length) {
       this.renderImage(1);
