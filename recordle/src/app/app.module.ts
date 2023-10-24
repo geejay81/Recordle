@@ -23,6 +23,8 @@ import { AlbumHistoryComponent } from './routes/album-history/album-history.comp
 import { PuzzleGuessLogComponent } from './components/puzzle-guess-log/puzzle-guess-log.component';
 import { FriendsComponent } from './components/friends/friends.component';
 import { HeroHeaderComponent } from './page-elements/hero-header/hero-header.component';
+import { KoFiComponent } from './components/ko-fi/ko-fi.component';
+import { SupportUsComponent } from './components/support-us/support-us.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { HeroHeaderComponent } from './page-elements/hero-header/hero-header.com
     AlbumHistoryComponent,
     PuzzleGuessLogComponent,
     FriendsComponent,
-    HeroHeaderComponent
+    HeroHeaderComponent,
+    KoFiComponent,
+    SupportUsComponent
   ],
   imports: [
     BrowserModule,
