@@ -12,6 +12,7 @@ export class ScriptService {
       const scriptElement = document.createElement('script');
       scriptElement.src = url;
       scriptElement.async = true;
+      scriptElement.setAttribute('data-cfasync', "false");
       scriptElement.onload = () => this.zone.run(() => resolve());
       scriptElement.onerror = () => this.zone.run(() => reject());
       document.body.appendChild(scriptElement);
