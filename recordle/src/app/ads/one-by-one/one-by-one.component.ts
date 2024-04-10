@@ -11,11 +11,11 @@ export class OneByOneComponent implements OnInit, AfterViewInit {
   constructor(private scriptService: ScriptService) { }
   
   ngAfterViewInit(): void {
-    
+    this.loadExternalScript();
   }
 
   ngOnInit(): void {
-    this.loadExternalScript();
+    
   }
 
   private loadExternalScript(): void {
