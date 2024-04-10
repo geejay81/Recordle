@@ -19,7 +19,7 @@ export class OneByOneComponent implements OnInit, AfterViewInit {
   }
 
   private loadExternalScript(): void {
-    this.scriptService.loadScript('//pl23034930.profitablegatecpm.com/ac634aa3d45d8b72c58b0ea9ec0ca26a/invoke.js').then(() => {
+    this.scriptService.loadScript('https://pl23034930.profitablegatecpm.com/ac634aa3d45d8b72c58b0ea9ec0ca26a/invoke.js').then(() => {
     }).catch(error => {
       console.error('Error loading script:', error);
     });
