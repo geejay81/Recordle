@@ -59,7 +59,10 @@
               "src/styles.sass"
             ],
             "scripts": [
-              "./src/assets/scripts/autocomplete.js"
+              "./src/assets/scripts/autocomplete.js",
+              "./src/assets/scripts/cookie-consent.js",
+              "./src/assets/scripts/gtag.js",
+              "./src/assets/scripts/g4.js"
             ]
           },
           "configurations": {
