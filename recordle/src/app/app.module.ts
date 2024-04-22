@@ -25,6 +25,7 @@ import { FriendsComponent } from './components/friends/friends.component';
 import { HeroHeaderComponent } from './page-elements/hero-header/hero-header.component';
 import { KoFiComponent } from './components/ko-fi/ko-fi.component';
 import { SupportUsComponent } from './components/support-us/support-us.component';
+import { PrivacyPolicyComponent } from './routes/privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { SupportUsComponent } from './components/support-us/support-us.component
     HeroHeaderComponent,
     KoFiComponent,
     SupportUsComponent,
+    PrivacyPolicyComponent,
   ],
   imports: [
     BrowserModule,
