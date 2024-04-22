@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var cookieconsent: any;
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -17,6 +19,11 @@ export class NavbarComponent implements OnInit {
   openHowToModal(e: Event) {
     e.preventDefault();
     this.showHowTo = true;
+  }
+
+  openCookieConsent(e: Event) {
+    e.preventDefault();
+    cookieconsent.openPreferencesCenter();
   }
 
   closeHowToModal() {
