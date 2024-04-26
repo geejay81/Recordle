@@ -1,5 +1,7 @@
-https://www.popidle.the-sound.co.uk/* https://popidle.the-sound.co.uk/:splat 301
-https://www.popidle.the-sound.co.uk/ https://popidle.the-sound.co.uk/ 301
+https://www.popidle.the-sound.co.uk/* https://popidle.the-sound.co.uk/:splat 301!
+https://www.popidle.the-sound.co.uk/ https://popidle.the-sound.co.uk/ 301!
+http://www.popidle.the-sound.co.uk/* https://popidle.the-sound.co.uk/:splat 301!
+http://www.popidle.the-sound.co.uk/ https://popidle.the-sound.co.uk/ 301!
 /guess-the-album /index.html 200
 /guess-the-album/* /index.html 200
 /album-history /index.html 200
