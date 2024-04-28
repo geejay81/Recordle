@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-declare var cookieconsent: any;
+// declare var cookieconsent: any;
+declare var adthrive: any;
 
 @Component({
   selector: 'app-navbar',
@@ -23,7 +24,8 @@ export class NavbarComponent implements OnInit {
 
   openCookieConsent(e: Event) {
     e.preventDefault();
-    cookieconsent.openPreferencesCenter();
+    // cookieconsent.openPreferencesCenter();
+    adthrive.cmd.push(adthrive.showPrivacyPreferences);
   }
 
   closeHowToModal() {
