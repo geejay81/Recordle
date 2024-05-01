@@ -1,7 +1,6 @@
+/ads.txt https://ads.adthrive.com/sites/661d92207322510b020ba871/ads.txt 301
 https://www.popidle.the-sound.co.uk/* https://popidle.the-sound.co.uk/:splat 301!
 https://www.popidle.the-sound.co.uk/ https://popidle.the-sound.co.uk/ 301!
-http://www.popidle.the-sound.co.uk/* https://popidle.the-sound.co.uk/:splat 301!
-http://www.popidle.the-sound.co.uk/ https://popidle.the-sound.co.uk/ 301!
 /guess-the-album /index.html 200
 /guess-the-album/* /index.html 200
 /album-history /index.html 200
