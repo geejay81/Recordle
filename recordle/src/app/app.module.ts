@@ -26,6 +26,7 @@ import { HeroHeaderComponent } from './page-elements/hero-header/hero-header.com
 import { KoFiComponent } from './components/ko-fi/ko-fi.component';
 import { SupportUsComponent } from './components/support-us/support-us.component';
 import { PrivacyPolicyComponent } from './routes/privacy-policy/privacy-policy.component';
+import { MorePopidleComponent } from './components/more-popidle/more-popidle.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { PrivacyPolicyComponent } from './routes/privacy-policy/privacy-policy.c
     KoFiComponent,
     SupportUsComponent,
     PrivacyPolicyComponent,
+    MorePopidleComponent,
   ],
   imports: [
     BrowserModule,
