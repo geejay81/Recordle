@@ -11,6 +11,7 @@ declare var adthrive: any;
 export class NavbarComponent implements OnInit {
   showHowTo: boolean = false;
   showStats: boolean = false;
+  showNotifications: boolean = false;
 
   constructor() { }
 
@@ -24,8 +25,16 @@ export class NavbarComponent implements OnInit {
 
   openCookieConsent(e: Event) {
     e.preventDefault();
-    // cookieconsent.openPreferencesCenter();
     adthrive.cmd.push(adthrive.showPrivacyPreferences);
+  }
+
+  openNotifications(e: Event) {
+    e.preventDefault();
+    this.showNotifications = true;
+  }
+
+  closeNotificationsModal() {
+    this.showNotifications = false;
   }
 
   closeHowToModal() {

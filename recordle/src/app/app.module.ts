@@ -27,6 +27,7 @@ import { KoFiComponent } from './components/ko-fi/ko-fi.component';
 import { SupportUsComponent } from './components/support-us/support-us.component';
 import { PrivacyPolicyComponent } from './routes/privacy-policy/privacy-policy.component';
 import { MorePopidleComponent } from './components/more-popidle/more-popidle.component';
+import { NotificationsPopupComponent } from './components/notifications-popup/notifications-popup.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { MorePopidleComponent } from './components/more-popidle/more-popidle.com
     SupportUsComponent,
     PrivacyPolicyComponent,
     MorePopidleComponent,
+    NotificationsPopupComponent,
   ],
   imports: [
     BrowserModule,
