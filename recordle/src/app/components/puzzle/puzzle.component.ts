@@ -127,7 +127,7 @@ export class PuzzleComponent implements OnInit, OnDestroy {
 
 ${this.getResultEmojiBoard()}
 
-${this.getPuzzleUrl()}`;
+${this.getPuzzleUrl()}?utm_source=popidle&utm_campaign=share`;
 
     if (navigator.share) { 
       navigator.share({
@@ -142,7 +142,7 @@ ${this.getPuzzleUrl()}`;
     } else {
       // Copy to clipboard instead ...
       navigator.clipboard.writeText(textToShare).then(() => {
-        alert("Result to clipboard");
+        alert("Copied result to clipboard!");
       });
     };
   }
