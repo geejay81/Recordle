@@ -129,6 +129,12 @@ ${this.getResultEmojiBoard()}
 
 ${this.getPuzzleUrl()}?utm_source=popidle&utm_campaign=share`;
 
+    const copyToClipboard = () => {
+      navigator.clipboard.writeText(textToShare).then(() => {
+        alert("Copied result to clipboard!");
+      });
+    }
+
     if (navigator.share) { 
       navigator.share({
         files: this.generateImageAsShareableFile(),
@@ -138,12 +144,14 @@ ${this.getPuzzleUrl()}?utm_source=popidle&utm_campaign=share`;
       .then(() => {
         console.log('Thanks for sharing!');
       })
-      .catch(console.error);
-    } else {
-      // Copy to clipboard instead ...
-      navigator.clipboard.writeText(textToShare).then(() => {
-        alert("Copied result to clipboard!");
+      .catch((e) => {
+        if (e.toString().includes('AbortError')) {
+          return;
+        }
+        copyToClipboard();
       });
+    } else {
+      copyToClipboard();
     };
   }
   getPuzzleUrl() {
