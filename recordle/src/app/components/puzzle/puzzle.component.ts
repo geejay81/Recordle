@@ -34,6 +34,7 @@ export class PuzzleComponent implements OnInit, OnDestroy {
   incorrectBox = '🟥';
   nearlyBox = '🟨'
   skippedBox = '⬜';
+  guitar = '🎸';
   
   constructor(
     private dataService: DataService,
@@ -123,11 +124,13 @@ export class PuzzleComponent implements OnInit, OnDestroy {
 
   share(): void {
 
-    const textToShare = `#PopIdle #${this.puzzleNumber} #PopIdle${this.puzzleNumber}
+    const textToShare = `PopIdle Game ${this.puzzleNumber} result
 
 ${this.getResultEmojiBoard()}
 
-${this.getPuzzleUrl()}?utm_source=popidle&utm_campaign=share`;
+#PopIdle #Heardle @popidlegame #MusicQuiz
+
+${this.getPuzzleUrl()}`;
 
     const copyToClipboard = () => {
       navigator.clipboard.writeText(textToShare).then(() => {
@@ -161,7 +164,7 @@ ${this.getPuzzleUrl()}?utm_source=popidle&utm_campaign=share`;
   }
 
   private getResultEmojiBoard(): string {
-    let result = '';
+    let result = this.guitar;
 
     for (let i = 0; i < this.guesses.length; i++) {
       switch (this.guesses[i].result) {
