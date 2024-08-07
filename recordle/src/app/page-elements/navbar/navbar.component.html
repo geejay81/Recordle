@@ -21,19 +21,13 @@
                 <i class="fa-solid fa-calendar-days"></i>
                 <span class="is-sr-only">Previous puzzles</span>
             </a>
-            <a class="navbar-item" href="#" (click)="openNotifications($event)" title="Notifications">
-                <i class="fa-solid fa-bell has-text-danger"></i>
-                <span class="is-sr-only">Notifications</span>
+            <a class="navbar-item" [routerLink]="['/more-games']" title="More games">
+                <i class="fa-solid fa-plus"></i>
+                <span class="is-sr-only">More games</span>
             </a>
-
-            <!-- <a class="navbar-item" href="#" (click)="openCookieConsent($event)" title="Cookie preference centre">
-                <i class="fa-solid fa-cookie"></i>
-                <span class="is-sr-only">Cookie preference centre</span>
-            </a> -->
         </div>
     </div>
 </nav>
 
 <app-stats *ngIf="showStats" (closeStats)="closeStatsModal()"></app-stats>
 <app-how-to *ngIf="showHowTo" (closeStats)="closeHowToModal()"></app-how-to>
-<app-notifications-popup *ngIf="showNotifications" (closeNotifications)="closeNotificationsModal()"></app-notifications-popup>

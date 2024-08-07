@@ -5,12 +5,14 @@ import { GuessTheAlbumComponent } from './routes/guess-the-album/guess-the-album
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PrivacyPolicyComponent } from './routes/privacy-policy/privacy-policy.component';
+import { GamesComponent } from './routes/games/games.component';
 
 const routes: Routes = [
   { path: 'album-history', component: AlbumHistoryComponent },
   { path: 'guess-the-album', component: GuessTheAlbumComponent },
   { path: 'guess-the-album/:id', component: PreviousGuessTheAlbumComponent },
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
+  { path: 'more-games', component: GamesComponent },
   { path: 'page-not-found', component: PageNotFoundComponent },
   { path: '', redirectTo: '/guess-the-album', pathMatch: 'full' }
 
