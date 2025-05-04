@@ -35,7 +35,7 @@ export class PuzzleComponent implements OnInit, OnDestroy {
   nearlyBox = '🟨'
   skippedBox = '⬜';
   guitar = '🎸';
-  
+
   constructor(
     private dataService: DataService,
     private historyService: HistoryService,
@@ -60,11 +60,12 @@ export class PuzzleComponent implements OnInit, OnDestroy {
   }
 
   initialiseAutocomplete(): void {
-    const matches = 
+    const matches =
       this.puzzleData
         .map(album => `${album["artist"]} - ${album["albumTitle"]}`)
+        .filter((value, index, self) => self.indexOf(value) === index)
         .sort();
-    
+
     autocomplete(this.guessInput, matches);
   }
 
@@ -89,7 +90,7 @@ export class PuzzleComponent implements OnInit, OnDestroy {
         this.renderImage(1);
       }
     };
-    
+
     this.img1.setAttribute('crossOrigin', '');
     this.img1.src = this.answer!.coverArt;
   }
@@ -118,7 +119,7 @@ export class PuzzleComponent implements OnInit, OnDestroy {
 
       return 'correct';
     }
-    
+
     return 'incorrect';
   }
 
@@ -138,7 +139,7 @@ ${this.getPuzzleUrl()}`;
       });
     }
 
-    if (navigator.share) { 
+    if (navigator.share) {
       navigator.share({
         files: this.generateImageAsShareableFile(),
         title: `PopIdle #${this.puzzleNumber}`,
@@ -237,7 +238,7 @@ ${this.getPuzzleUrl()}`;
   private generateImage(pixelSize: number): HTMLImageElement {
     const w = this.img1.width;
     const h = this.img1.height;
-    
+
     this.c.width = w;
     this.c.height = h;
     this.ctx!.drawImage(this.img1, 0, 0);
@@ -245,7 +246,7 @@ ${this.getPuzzleUrl()}`;
     let pixelArr = this.ctx!.getImageData(0, 0, w, h).data;
 
     const sample_size = pixelSize;
-    
+
     for (let y = 0; y < h; y += sample_size) {
         for (let x = 0; x < w; x += sample_size) {
         let p = (x + (y * w)) * 4;
@@ -253,7 +254,7 @@ ${this.getPuzzleUrl()}`;
         this.ctx!.fillRect(x, y, sample_size, sample_size);
         }
     }
-    
+
     let img2 = new Image();
     img2.src = this.c.toDataURL("image/jpeg");
     const dimension = window.innerWidth < window.innerHeight ? window.innerWidth : window.innerHeight;
@@ -286,7 +287,7 @@ ${this.getPuzzleUrl()}`;
   private renderImage(pixelSize: number): void {
 
     const img = this.generateImage(pixelSize);
-    
+
     document.getElementById("puzzle-image")?.remove();
     document.getElementById("puzzle-box")?.appendChild(img);
     img.tabIndex = -1;
