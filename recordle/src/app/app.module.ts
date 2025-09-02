@@ -2,7 +2,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -30,41 +30,34 @@ import { MorePopidleComponent } from './components/more-popidle/more-popidle.com
 import { GamesComponent } from './routes/games/games.component';
 import { GameComponent } from './components/game/game.component';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    GuessTheAlbumComponent,
-    NavbarComponent,
-    FooterComponent,
-    PuzzleComponent,
-    PuzzleImageComponent,
-    SpotifyWidgetComponent,
-    UriPipe,
-    StatsComponent,
-    HowToComponent,
-    StatsDetailComponent,
-    PreviousGuessTheAlbumComponent,
-    PageNotFoundComponent,
-    AlbumHistoryComponent,
-    PuzzleGuessLogComponent,
-    FriendsComponent,
-    HeroHeaderComponent,
-    KoFiComponent,
-    SupportUsComponent,
-    PrivacyPolicyComponent,
-    MorePopidleComponent,
-    GamesComponent,
-    GameComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FontAwesomeModule,
-    FormsModule,
-    HttpClientModule,
-    RouterModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        GuessTheAlbumComponent,
+        NavbarComponent,
+        FooterComponent,
+        PuzzleComponent,
+        PuzzleImageComponent,
+        SpotifyWidgetComponent,
+        UriPipe,
+        StatsComponent,
+        HowToComponent,
+        StatsDetailComponent,
+        PreviousGuessTheAlbumComponent,
+        PageNotFoundComponent,
+        AlbumHistoryComponent,
+        PuzzleGuessLogComponent,
+        FriendsComponent,
+        HeroHeaderComponent,
+        KoFiComponent,
+        SupportUsComponent,
+        PrivacyPolicyComponent,
+        MorePopidleComponent,
+        GamesComponent,
+        GameComponent,
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        FontAwesomeModule,
+        FormsModule,
+        RouterModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
